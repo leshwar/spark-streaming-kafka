@@ -1,0 +1,1844 @@
+[0m[[0mdebug[0m] [0mjavaOptions: List()[0m
+[0m[[0minfo[0m] [0mRunning kafkar [0m
+[0m[[0minfo[0m] [0mprogram started[0m
+[0m[[31merror[0m] [0mUsing Spark's default log4j profile: org/apache/spark/log4j-defaults.properties[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:51 INFO VerifiableProperties: Verifying properties[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:51 INFO VerifiableProperties: Property group.id is overridden to spark-streaming-consumer-group[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:51 INFO VerifiableProperties: Property zookeeper.connect is overridden to localhost:2181[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:51 INFO VerifiableProperties: Property zookeeper.connection.timeout.ms is overridden to 10000[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:51 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], Connecting to zookeeper instance at localhost:2181[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337732000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337734000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], starting auto committer every 60000 ms[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], begin registering consumer spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392 in ZK[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], end registering consumer spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392 in ZK[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], starting watcher executor thread for consumer spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], begin rebalancing consumer spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392 try #0[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ConsumerFetcherManager: [ConsumerFetcherManager-1563337735679] Stopping leader finder thread[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ConsumerFetcherManager: [ConsumerFetcherManager-1563337735679] Stopping all fetchers[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ConsumerFetcherManager: [ConsumerFetcherManager-1563337735679] All connections stopped[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], Cleared all relevant queues for this fetcher[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], Cleared the data chunks in all the consumer message iterators[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], Committing all offsets after clearing the fetcher queues[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], Releasing partition ownership[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO RangeAssignor: Consumer spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392 rebalancing the following partitions: ArrayBuffer() for topic test with consumers: List(spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-0, spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-1, spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-2, spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-3, spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-4)[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 WARN RangeAssignor: No broker partitions consumed by consumer thread spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-4 for topic test[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 WARN RangeAssignor: No broker partitions consumed by consumer thread spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-0 for topic test[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 WARN RangeAssignor: No broker partitions consumed by consumer thread spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-1 for topic test[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 WARN RangeAssignor: No broker partitions consumed by consumer thread spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-2 for topic test[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 WARN RangeAssignor: No broker partitions consumed by consumer thread spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-3 for topic test[0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], Consumer spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392 selected partitions : [0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ConsumerFetcherManager$LeaderFinderThread: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-leader-finder-thread], Starting [0m
+[0m[[31merror[0m] [0m19/07/16 21:28:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], end rebalancing consumer spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392 try #0[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337736000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337738000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337740000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337742000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337744000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337746000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337748000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337750000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337752000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337754000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337756000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337758000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337760000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337762000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337764000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337766000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337768000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337770000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337772000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337774000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337776000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337778000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337780000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337782000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337784000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337786000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337788000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337790000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337792000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337794000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], Topic info for path /brokers/topics/test changed to {"version":1,"partitions":{"0":[0]}}, triggering rebalance[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], begin rebalancing consumer spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392 try #0[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ConsumerFetcherManager: [ConsumerFetcherManager-1563337735679] Stopping leader finder thread[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ConsumerFetcherManager$LeaderFinderThread: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-leader-finder-thread], Shutting down[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ConsumerFetcherManager$LeaderFinderThread: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-leader-finder-thread], Stopped [0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ConsumerFetcherManager$LeaderFinderThread: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-leader-finder-thread], Shutdown completed[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ConsumerFetcherManager: [ConsumerFetcherManager-1563337735679] Stopping all fetchers[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ConsumerFetcherManager: [ConsumerFetcherManager-1563337735679] All connections stopped[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], Cleared all relevant queues for this fetcher[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], Cleared the data chunks in all the consumer message iterators[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], Committing all offsets after clearing the fetcher queues[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], Releasing partition ownership[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO RangeAssignor: Consumer spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392 rebalancing the following partitions: ArrayBuffer(0) for topic test with consumers: List(spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-0, spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-1, spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-2, spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-3, spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-4)[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 WARN RangeAssignor: No broker partitions consumed by consumer thread spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-4 for topic test[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO RangeAssignor: spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-0 attempting to claim partition 0[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 WARN RangeAssignor: No broker partitions consumed by consumer thread spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-1 for topic test[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 WARN RangeAssignor: No broker partitions consumed by consumer thread spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-2 for topic test[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 WARN RangeAssignor: No broker partitions consumed by consumer thread spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-3 for topic test[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-0 successfully owned partition 0 for topic test[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], Consumer spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392 selected partitions : test:0: fetched offset = -1: consumed offset = -1[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ZookeeperConsumerConnector: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392], end rebalancing consumer spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392 try #0[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ConsumerFetcherManager$LeaderFinderThread: [spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-leader-finder-thread], Starting [0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO VerifiableProperties: Verifying properties[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO VerifiableProperties: Property client.id is overridden to spark-streaming-consumer-group[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO VerifiableProperties: Property metadata.broker.list is overridden to LAPTOP-BBLGMRO9:9092[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO VerifiableProperties: Property request.timeout.ms is overridden to 30000[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ClientUtils$: Fetching metadata from broker id:0,host:LAPTOP-BBLGMRO9,port:9092 with correlation id 0 for 1 topic(s) Set(test)[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO SyncProducer: Connected to LAPTOP-BBLGMRO9:9092 for producing[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO SyncProducer: Disconnecting from LAPTOP-BBLGMRO9:9092[0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ConsumerFetcherThread: [ConsumerFetcherThread-spark-streaming-consumer-group_LAPTOP-BBLGMRO9-1563337731085-a9b16392-0-0], Starting [0m
+[0m[[31merror[0m] [0m19/07/16 21:29:55 INFO ConsumerFetcherManager: [ConsumerFetcherManager-1563337735679] Added fetcher for partitions ArrayBuffer([[test,0], initOffset -1 to broker id:0,host:LAPTOP-BBLGMRO9,port:9092] )[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337796000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337798000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337800000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337802000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337804000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337806000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337808000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337810000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337812000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337814000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337816000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337818000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337820000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337822000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337824000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337826000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,Hey dude)[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337828000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337830000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337832000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337834000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337836000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337838000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337840000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337842000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337844000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337846000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337848000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337850000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337852000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337854000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337856000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337858000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337860000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337862000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337864000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337866000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337868000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337870000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337872000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337874000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337876000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337878000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337880000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337882000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337884000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337886000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337888000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337890000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337892000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337894000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337896000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337898000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337900000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337902000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337904000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337906000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337908000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337910000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337912000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337914000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337916000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,taxi_id,trip_start_timestamp,trip_end_timestamp,trip_seconds,trip_miles,pickup_census_tract,dropoff_census_tract,pickup_community_area,dropoff_community_area,fare,tips,tolls,extras,trip_total,payment_type,company,pickup_latitude,pickup_longitude,dropoff_latitude,dropoff_longitude)[0m
+[0m[[0minfo[0m] [0m(null,85,13-01-16 6:15,13-01-16 6:15,180,0.4,,,24,24,4.5,0,0,0,4.5,Cash,107,199,510,199,510)[0m
+[0m[[0minfo[0m] [0m(null,2776,22-01-16 9:30,22-01-16 9:45,240,0.7,,,,,4.45,4.45,0,0,8.9,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,3168,31-01-16 21:30,31-01-16 21:30,0,0,,,,,42.75,5,0,0,47.75,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,4237,23-01-16 17:30,23-01-16 17:30,480,1.1,,,6,6,7,0,0,0,7,Cash,,686,500,686,500)[0m
+[0m[[0minfo[0m] [0m(null,5710,14-01-16 5:45,14-01-16 6:00,480,2.71,,,32,,10.25,0,0,0,10.25,Cash,,385,478,,)[0m
+[0m[[0minfo[0m] [0m(null,1987,08-01-16 18:15,08-01-16 18:45,1080,6.2,,,8,3,17.75,0,0,0,17.75,Cash,,599,346,660,120)[0m
+[0m[[0minfo[0m] [0m(null,4986,14-01-16 4:30,14-01-16 5:00,1500,18.4,,,,,45,12,0,0,57,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,6400,26-01-16 4:15,26-01-16 4:15,60,0.2,,,16,16,3.75,0,0,0,3.75,Cash,107,527,24,527,24)[0m
+[0m[[0minfo[0m] [0m(null,7418,22-01-16 11:30,22-01-16 11:45,180,0,,504,8,32,5,2,0,1.5,8.5,Credit Card,82,210,470,744,605)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337918000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,1430,14-01-16 8:30,14-01-16 8:30,300,0.8,,307,28,32,5.75,2,0,0,7.75,Credit Card,107,411,545,64,231)[0m
+[0m[[0minfo[0m] [0m(null,7124,29-01-16 7:30,29-01-16 7:30,180,0.6,,,,,4.75,0,0,0,4.75,Cash,101,,,,)[0m
+[0m[[0minfo[0m] [0m(null,7912,11-01-16 7:00,11-01-16 7:15,240,0.97,,,,,5.75,0,0,0,5.75,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,3555,07-01-16 6:00,07-01-16 6:00,240,1,,,,,5.5,0,0,0,5.5,Cash,101,,,,)[0m
+[0m[[0minfo[0m] [0m(null,8613,07-01-16 10:00,07-01-16 10:15,600,2,,504,32,32,8.75,1.5,0,1,11.25,Credit Card,,744,605,744,605)[0m
+[0m[[0minfo[0m] [0m(null,3523,18-01-16 0:30,18-01-16 0:30,240,0.9,,,8,8,5.5,1,0,0,6.5,Credit Card,101,599,346,599,346)[0m
+[0m[[0minfo[0m] [0m(null,1907,24-01-16 4:15,24-01-16 4:30,240,0,,498,8,8,5.5,1,0,1,7.5,Credit Card,107,754,410,413,636)[0m
+[0m[[0minfo[0m] [0m(null,5439,24-01-16 15:00,24-01-16 15:15,360,0,,1046,33,33,6.25,0,0,0,6.25,Cash,8,728,277,728,277)[0m
+[0m[[0minfo[0m] [0m(null,2496,30-01-16 1:00,30-01-16 1:00,0,0,,,7,,3.5,0,0,0,3.5,Cash,101,374,660,,)[0m
+[0m[[0minfo[0m] [0m(null,3492,28-01-16 8:30,28-01-16 8:45,180,0.5,,16,28,32,5,2,0,0,7,Credit Card,,411,545,18,610)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337920000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,5726,03-01-16 19:30,03-01-16 19:30,180,0.4,,16,8,32,4.45,0,0,0,4.45,Cash,101,754,410,18,610)[0m
+[0m[[0minfo[0m] [0m(null,4247,25-01-16 1:45,25-01-16 1:45,120,0.5,,,24,24,4.5,0,0,1,5.5,Cash,,199,510,199,510)[0m
+[0m[[0minfo[0m] [0m(null,8460,16-01-16 23:45,17-01-16 0:00,300,0,,959,8,8,5.5,0,0,1,6.5,Cash,107,210,470,167,754)[0m
+[0m[[0minfo[0m] [0m(null,4799,30-01-16 2:00,30-01-16 2:00,180,0.6,,,6,6,4.5,2,0,1,7.5,Credit Card,107,686,500,686,500)[0m
+[0m[[0minfo[0m] [0m(null,3694,31-01-16 17:00,31-01-16 17:30,1860,17.8,,504,76,32,43.75,9.55,0,4,57.3,Credit Card,101,225,6,744,605)[0m
+[0m[[0minfo[0m] [0m(null,4769,29-01-16 2:15,29-01-16 2:30,1080,5.4,,,32,7,17.25,0,0,1,18.25,Cash,,385,478,173,203)[0m
+[0m[[0minfo[0m] [0m(null,6992,22-01-16 3:45,22-01-16 3:45,360,3.1,,,,,10.5,0,0,1.5,12,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,3003,24-01-16 21:30,24-01-16 21:30,0,0,,,,,36.75,7.35,0,0,44.1,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,3547,05-01-16 7:45,05-01-16 8:00,360,0.8,,225,28,8,5.75,2,0,0,7.75,Credit Card,,395,408,754,410)[0m
+[0m[[0minfo[0m] [0m(null,2405,05-01-16 1:00,05-01-16 1:30,1440,7.5,,,18,24,22,0,0,0,22,Cash,107,600,425,199,510)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337922000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,4348,01-01-16 0:00,01-01-16 0:00,360,1.4,,,4,2,7,0,0,0,7,Dispute,92,399,780,684,503)[0m
+[0m[[0minfo[0m] [0m(null,8575,12-01-16 17:00,12-01-16 17:00,0,0,,,,,12.75,1.2,0,0,13.95,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,1061,24-01-16 22:15,24-01-16 22:30,600,3.3,,,60,61,11,0,0,0,11,Cash,,557,700,307,499)[0m
+[0m[[0minfo[0m] [0m(null,5979,02-01-16 6:00,02-01-16 6:15,540,3.4,,,6,16,11.25,0,0,0,11.25,Cash,,686,500,527,24)[0m
+[0m[[0minfo[0m] [0m(null,3053,21-01-16 21:15,21-01-16 21:15,0,0,,,,,5.5,1.1,0,0,6.6,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,8271,21-01-16 8:15,21-01-16 8:45,1680,5.5,,,3,8,19,4.75,0,0,23.75,Credit Card,,660,120,599,346)[0m
+[0m[[0minfo[0m] [0m(null,4638,12-01-16 12:15,12-01-16 12:15,480,0,,,21,22,8,0,0,0,8,Cash,107,95,781,604,668)[0m
+[0m[[0minfo[0m] [0m(null,2593,25-01-16 9:45,25-01-16 10:00,1680,17.8,,16,76,32,44,0,0,4,48,Cash,,225,6,18,610)[0m
+[0m[[0minfo[0m] [0m(null,84,21-01-16 17:15,21-01-16 17:15,660,2.2,,,8,24,9.5,0,0,0,9.5,Cash,107,599,346,199,510)[0m
+[0m[[0minfo[0m] [0m(null,2481,15-01-16 14:45,15-01-16 14:45,420,0,,504,32,32,6.25,0,0,0,6.25,Cash,107,18,610,744,605)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337924000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,2671,18-01-16 14:00,18-01-16 14:15,600,1.9,,,7,8,8.5,0,0,0,8.5,Cash,,173,203,599,346)[0m
+[0m[[0minfo[0m] [0m(null,2147,03-01-16 1:00,03-01-16 1:00,480,1.3,,805,8,8,7.25,0,0,2.5,9.75,Cash,107,754,410,526,511)[0m
+[0m[[0minfo[0m] [0m(null,8560,19-01-16 19:45,19-01-16 20:00,360,0.9,,787,8,8,6.25,2,0,1,9.25,Credit Card,101,210,470,161,649)[0m
+[0m[[0minfo[0m] [0m(null,6383,22-01-16 16:00,22-01-16 16:00,300,0,,504,8,32,5.75,0,0,0,5.75,Cash,8,210,470,744,605)[0m
+[0m[[0minfo[0m] [0m(null,1514,09-01-16 3:15,09-01-16 5:00,6540,0.6,,,28,22,54,0,0,1,55,Credit Card,107,158,270,604,668)[0m
+[0m[[0minfo[0m] [0m(null,3964,12-01-16 10:15,12-01-16 10:45,1560,0.3,,,28,6,20.5,0,0,0,20.5,Cash,107,158,270,686,500)[0m
+[0m[[0minfo[0m] [0m(null,6989,23-01-16 10:15,23-01-16 10:30,720,0.3,,16,6,32,16.5,3.3,0,0,19.8,Credit Card,8,577,642,18,610)[0m
+[0m[[0minfo[0m] [0m(null,3259,26-01-16 14:15,26-01-16 14:30,420,1.1,,,8,8,6.5,0,0,0,6.5,Cash,,599,346,599,346)[0m
+[0m[[0minfo[0m] [0m(null,2150,27-01-16 12:15,27-01-16 12:30,480,1.4,,504,28,32,7.75,3,0,0,10.75,Credit Card,107,411,545,744,605)[0m
+[0m[[0minfo[0m] [0m(null,3482,19-01-16 19:15,19-01-16 20:00,2400,0,,512,76,7,37,8.4,0,5,50.4,Credit Card,107,225,6,642,32)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337926000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,1471,13-01-16 19:00,13-01-16 19:00,240,0.8,,225,32,8,5.25,5.8,0,0,11.05,Credit Card,,18,610,754,410)[0m
+[0m[[0minfo[0m] [0m(null,6474,02-01-16 19:45,02-01-16 20:00,720,1.9,,749,8,28,9.5,0,0,0,9.5,Cash,107,688,206,681,196)[0m
+[0m[[0minfo[0m] [0m(null,3591,27-01-16 22:00,27-01-16 22:00,0,0,,,7,7,3.25,0,0,0,3.25,Cash,101,173,203,173,203)[0m
+[0m[[0minfo[0m] [0m(null,7506,11-01-16 13:15,11-01-16 13:15,240,0,,970,8,8,5,0,0,0,5,Cash,107,161,649,210,470)[0m
+[0m[[0minfo[0m] [0m(null,4907,13-01-16 20:15,13-01-16 20:30,780,4.9,,254,8,28,15.25,3.25,0,1,19.5,Credit Card,107,413,636,591,433)[0m
+[0m[[0minfo[0m] [0m(null,8357,15-01-16 17:30,15-01-16 17:45,1380,3.6,,,32,24,15,3,0,0,18,Credit Card,109,385,478,199,510)[0m
+[0m[[0minfo[0m] [0m(null,402,30-01-16 3:15,30-01-16 3:15,240,0.9,,694,6,7,5.5,0,0,1.5,7,Cash,92,606,617,595,671)[0m
+[0m[[0minfo[0m] [0m(null,2019,20-01-16 23:15,20-01-16 23:30,900,7.3,,,8,4,20.25,4.05,0,0,24.3,Credit Card,,599,346,399,780)[0m
+[0m[[0minfo[0m] [0m(null,766,13-01-16 9:15,13-01-16 9:30,480,2.1,,504,8,32,7,0,0,0,7,Cash,82,161,649,744,605)[0m
+[0m[[0minfo[0m] [0m(null,3886,22-01-16 18:45,22-01-16 19:15,1500,0,,,8,24,16.5,0,0,0,16.5,Cash,82,599,346,199,510)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337928000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,1691,24-01-16 7:00,24-01-16 7:15,600,0,,,8,28,10.25,2.8,0,1,14.05,Credit Card,8,599,346,158,270)[0m
+[0m[[0minfo[0m] [0m(null,295,09-01-16 18:15,09-01-16 18:30,420,1.1,,,6,7,6.5,0,0,0,6.5,Cash,,686,500,173,203)[0m
+[0m[[0minfo[0m] [0m(null,2260,08-01-16 16:45,08-01-16 16:45,180,0.4,,16,32,32,4.75,0,0,0,4.75,Cash,82,18,610,18,610)[0m
+[0m[[0minfo[0m] [0m(null,8067,12-01-16 19:15,12-01-16 19:15,420,0.7,,899,8,8,5.75,2,0,1,8.75,Credit Card,,294,113,170,351)[0m
+[0m[[0minfo[0m] [0m(null,4749,15-01-16 13:00,15-01-16 13:00,240,0.6,,504,8,32,5,0,0,0,5,Cash,107,210,470,744,605)[0m
+[0m[[0minfo[0m] [0m(null,6153,26-01-16 20:15,26-01-16 20:30,300,0,,40,28,28,5.5,0,0,1,6.5,Cash,107,681,196,395,408)[0m
+[0m[[0minfo[0m] [0m(null,1615,13-01-16 23:30,13-01-16 23:45,300,0,,787,32,8,7,1,0,0,8,Credit Card,107,64,231,161,649)[0m
+[0m[[0minfo[0m] [0m(null,6467,21-01-16 13:30,21-01-16 14:00,2640,13.3,,,32,6,37,0,0,2,39,Cash,,385,478,686,500)[0m
+[0m[[0minfo[0m] [0m(null,3992,27-01-16 22:15,27-01-16 22:15,600,2.5,,,,,9.75,1.5,0,0,11.25,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,6468,07-01-16 23:45,07-01-16 23:45,660,2.58,,1046,8,33,10.5,4,0,0,14.5,Credit Card,,754,410,728,277)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337930000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,3885,24-01-16 4:30,24-01-16 4:30,360,1.6,,140,8,8,7,0,0,0,7,Cash,,130,532,695,366)[0m
+[0m[[0minfo[0m] [0m(null,1474,04-01-16 6:45,04-01-16 6:45,240,1.1,,504,32,32,6,0,0,0,6,Cash,,18,610,744,605)[0m
+[0m[[0minfo[0m] [0m(null,978,23-01-16 3:30,23-01-16 3:45,420,1.7,,,,,7.75,2,0,0,9.75,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,8298,10-01-16 11:15,10-01-16 11:30,360,0.92,,,,,6.25,2,0,0,8.25,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,1710,01-01-16 5:15,01-01-16 5:15,0,0,,,23,23,3.25,0,0,0,3.25,Cash,107,136,517,136,517)[0m
+[0m[[0minfo[0m] [0m(null,1760,04-01-16 8:15,04-01-16 8:30,360,0,,,39,41,6.25,0,0,0,6.25,Cash,107,470,676,583,195)[0m
+[0m[[0minfo[0m] [0m(null,2225,18-01-16 9:00,18-01-16 9:00,420,0.95,,,,,6.25,0,0,0,6.25,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,3452,05-01-16 10:30,05-01-16 10:30,540,1.7,,16,8,32,8.5,0,0,0,8.5,Cash,101,294,113,18,610)[0m
+[0m[[0minfo[0m] [0m(null,3484,23-01-16 18:30,23-01-16 18:45,780,2.4,,,8,7,10.25,2,0,1,13.25,Credit Card,,599,346,173,203)[0m
+[0m[[0minfo[0m] [0m(null,5864,28-01-16 12:15,28-01-16 12:30,660,1.5,,16,8,32,8.25,0,0,0,8.25,Cash,107,767,733,18,610)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337932000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,1163,23-01-16 22:00,23-01-16 22:15,780,2.5,,187,5,77,10,0,0,1,11,Cash,,649,469,646,574)[0m
+[0m[[0minfo[0m] [0m(null,6802,15-01-16 21:30,15-01-16 21:30,300,0.8,,952,7,7,5.75,0,0,1,6.75,Cash,,618,407,374,660)[0m
+[0m[[0minfo[0m] [0m(null,1190,17-01-16 19:45,17-01-16 20:00,540,0.1,,805,32,8,8.25,0,0,1,9.25,Cash,107,18,610,526,511)[0m
+[0m[[0minfo[0m] [0m(null,3662,23-01-16 21:45,23-01-16 22:00,1200,4.45,,225,6,8,16,2.4,0,0,18.4,Credit Card,,344,53,754,410)[0m
+[0m[[0minfo[0m] [0m(null,4879,18-01-16 19:15,18-01-16 19:15,0,0,,,,,9.25,1.75,0,0,11,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,3675,15-01-16 17:00,15-01-16 17:30,960,2,,316,32,8,10.5,2,0,0,12.5,Credit Card,,18,610,130,532)[0m
+[0m[[0minfo[0m] [0m(null,3989,06-01-16 13:15,06-01-16 13:15,240,0.6,,970,32,8,5,1,0,0,6,Credit Card,107,18,610,210,470)[0m
+[0m[[0minfo[0m] [0m(null,3090,02-01-16 15:00,02-01-16 15:00,480,0,,504,8,32,6.75,0,0,1,7.75,Cash,107,754,410,744,605)[0m
+[0m[[0minfo[0m] [0m(null,4513,02-01-16 23:00,02-01-16 23:00,60,0,,,,,3.25,0,0,43,46.25,Credit Card,8,,,,)[0m
+[0m[[0minfo[0m] [0m(null,738,09-01-16 0:00,09-01-16 0:30,1260,12.6,,889,76,5,33,7.4,0,4,44.4,Credit Card,,225,6,264,136)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337934000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,770,16-01-16 0:30,16-01-16 0:30,240,1.1,,1051,6,6,6,2,0,0,8,Credit Card,,701,323,458,330)[0m
+[0m[[0minfo[0m] [0m(null,6865,19-01-16 14:00,19-01-16 14:15,300,0,,504,8,32,5.75,1.25,0,0,7,Credit Card,107,688,206,744,605)[0m
+[0m[[0minfo[0m] [0m(null,4548,06-01-16 17:00,06-01-16 17:00,420,0,,,24,24,6.5,0,0,0,6.5,Cash,107,199,510,199,510)[0m
+[0m[[0minfo[0m] [0m(null,2088,19-01-16 2:15,19-01-16 2:30,540,5.2,,,8,22,15.5,0,0,0,15.5,Cash,107,599,346,604,668)[0m
+[0m[[0minfo[0m] [0m(null,4601,26-01-16 17:00,26-01-16 17:00,360,1.1,,959,32,8,6.5,0,0,0,6.5,No Charge,101,18,610,167,754)[0m
+[0m[[0minfo[0m] [0m(null,765,31-01-16 1:00,31-01-16 1:00,300,0.1,,,3,6,7.5,0,0,1.5,9,Cash,107,660,120,686,500)[0m
+[0m[[0minfo[0m] [0m(null,8648,21-01-16 14:00,21-01-16 14:00,300,0,,1010,32,28,5.5,0,0,0,5.5,Cash,8,18,610,700,659)[0m
+[0m[[0minfo[0m] [0m(null,6451,21-01-16 23:15,21-01-16 23:30,1620,13.3,,,76,3,34,0,0,4,38,Cash,10,575,547,660,120)[0m
+[0m[[0minfo[0m] [0m(null,2172,30-01-16 23:45,30-01-16 23:45,0,0,,,,,5.25,1.05,0,0,6.3,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,4690,26-01-16 18:45,26-01-16 19:15,1560,0.5,,,32,77,25.25,5.05,0,0,30.3,Credit Card,107,385,478,556,288)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337936000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,2454,08-01-16 12:00,08-01-16 12:00,420,0.8,,,,,6,1,0,0,7,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,2636,27-01-16 17:00,27-01-16 17:15,480,1.1,,930,76,32,6.75,0,0,0,6.75,Cash,,225,6,329,69)[0m
+[0m[[0minfo[0m] [0m(null,8035,22-01-16 9:15,22-01-16 9:15,300,0.8,,911,32,8,5.75,0,0,0,5.75,Cash,,64,231,688,206)[0m
+[0m[[0minfo[0m] [0m(null,8163,24-01-16 13:15,24-01-16 14:00,1980,15.6,,543,56,7,39,5,0,2,46,Credit Card,,433,757,730,775)[0m
+[0m[[0minfo[0m] [0m(null,330,06-01-16 21:00,06-01-16 21:15,1260,15.2,,,76,,37.5,5,0,26,68.5,Credit Card,107,575,547,,)[0m
+[0m[[0minfo[0m] [0m(null,260,27-01-16 10:00,27-01-16 10:00,420,1.7,,,,,6.25,0,0,0,6.25,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,8048,26-01-16 13:45,26-01-16 14:00,480,3.7,,553,76,,12,3,0,4,19,Credit Card,101,225,6,594,572)[0m
+[0m[[0minfo[0m] [0m(null,3221,21-01-16 12:15,21-01-16 12:30,780,0.3,,,32,59,17.5,3.5,0,0,21,Credit Card,107,385,478,376,92)[0m
+[0m[[0minfo[0m] [0m(null,6609,12-01-16 1:00,12-01-16 1:15,960,11.8,,,8,12,29.75,5.95,0,0,35.7,Credit Card,,599,346,588,258)[0m
+[0m[[0minfo[0m] [0m(null,5144,29-01-16 6:45,29-01-16 7:15,1440,13.6,,960,8,56,35.25,7.85,0,4,47.1,Credit Card,109,161,649,433,757)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337938000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,4005,02-01-16 15:15,02-01-16 15:30,900,2.1,,787,32,8,10.25,2,0,0,12.25,Credit Card,,18,610,161,649)[0m
+[0m[[0minfo[0m] [0m(null,4051,01-01-16 3:30,01-01-16 3:30,240,0.9,,,28,31,5.25,0,0,0,5.25,Cash,101,158,270,558,388)[0m
+[0m[[0minfo[0m] [0m(null,919,31-01-16 4:00,31-01-16 4:15,240,0.3,,899,8,8,4.5,0,0,1,5.5,Cash,8,210,470,170,351)[0m
+[0m[[0minfo[0m] [0m(null,1471,15-01-16 2:15,15-01-16 2:15,180,1.2,,,8,24,6,0,0,1,7,Cash,,599,346,199,510)[0m
+[0m[[0minfo[0m] [0m(null,8609,07-01-16 23:45,07-01-16 23:45,120,0,,749,28,28,5,0,0,0,5,Cash,107,395,408,681,196)[0m
+[0m[[0minfo[0m] [0m(null,6847,02-01-16 20:45,02-01-16 20:45,240,1.1,,316,8,8,6,2,0,1,9,Credit Card,109,210,470,130,532)[0m
+[0m[[0minfo[0m] [0m(null,93,13-01-16 8:30,13-01-16 8:45,300,0.5,,807,32,28,5.25,0,0,0,5.25,Cash,,18,610,411,545)[0m
+[0m[[0minfo[0m] [0m(null,1373,28-01-16 19:45,28-01-16 19:45,600,1,,970,32,8,7.5,1.5,0,0,9,Credit Card,101,64,231,210,470)[0m
+[0m[[0minfo[0m] [0m(null,2329,08-01-16 22:15,08-01-16 22:30,300,0,,911,8,8,5.75,0,0,1,6.75,Cash,107,413,636,688,206)[0m
+[0m[[0minfo[0m] [0m(null,7150,08-01-16 23:45,08-01-16 23:45,0,0,,,24,24,3.25,0,0,0,3.25,Cash,107,199,510,199,510)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337940000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,6535,22-01-16 23:45,23-01-16 0:00,660,2.1,,,28,24,9.75,0,0,1,10.75,Cash,92,158,270,199,510)[0m
+[0m[[0minfo[0m] [0m(null,5144,13-01-16 21:15,13-01-16 21:30,420,1.2,,16,8,32,6.5,0,0,0,6.5,Cash,109,167,754,18,610)[0m
+[0m[[0minfo[0m] [0m(null,4214,06-01-16 13:00,06-01-16 13:15,360,0.9,,899,32,8,6.25,2,0,0,8.25,Credit Card,101,64,231,170,351)[0m
+[0m[[0minfo[0m] [0m(null,1879,07-01-16 22:00,07-01-16 22:00,420,2,,792,7,8,8.25,0,0,0,8.25,Cash,107,642,32,419,615)[0m
+[0m[[0minfo[0m] [0m(null,273,16-01-16 22:30,16-01-16 22:30,0,0,,,,,36.5,7.3,0,0,43.8,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,3004,10-01-16 0:15,10-01-16 0:30,960,2.6,,,8,24,11.75,1,0,0,12.75,Credit Card,,599,346,199,510)[0m
+[0m[[0minfo[0m] [0m(null,41,20-01-16 7:15,20-01-16 7:15,600,1.5,,504,28,32,8,1.5,0,0,9.5,Credit Card,,411,545,744,605)[0m
+[0m[[0minfo[0m] [0m(null,8522,11-01-16 21:00,11-01-16 21:15,420,0,,140,8,8,6.75,0,0,0,6.75,Cash,8,419,615,695,366)[0m
+[0m[[0minfo[0m] [0m(null,8149,25-01-16 15:45,25-01-16 16:00,480,1.5,,,8,6,7.5,0,0,0,7.5,Cash,,599,346,686,500)[0m
+[0m[[0minfo[0m] [0m(null,5293,12-01-16 18:45,12-01-16 18:45,780,0.8,,16,8,32,8,0,0,1,9,Cash,,210,470,18,610)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337942000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,7626,05-01-16 9:15,05-01-16 9:30,900,7.8,,,,,21.5,4.5,0,1,27,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,4292,01-01-16 23:00,01-01-16 23:00,540,2.5,,849,8,6,8.44,2,0,0,10.44,Credit Card,,454,453,231,564)[0m
+[0m[[0minfo[0m] [0m(null,4916,15-01-16 1:30,15-01-16 1:30,300,1.1,,,7,7,6,0,0,1.5,7.5,Cash,,173,203,173,203)[0m
+[0m[[0minfo[0m] [0m(null,2225,09-01-16 1:15,09-01-16 1:30,780,3.18,,,,,11,0,0,0,11,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,3406,11-01-16 11:00,11-01-16 11:15,240,0.9,,1010,28,28,5.5,1,0,0,6.5,Credit Card,101,411,545,700,659)[0m
+[0m[[0minfo[0m] [0m(null,7187,22-01-16 8:30,22-01-16 8:45,1020,1.3,,16,28,32,9.25,2,0,0,11.25,Credit Card,,411,545,18,610)[0m
+[0m[[0minfo[0m] [0m(null,8557,10-01-16 3:15,10-01-16 3:15,0,0,,,,,17,3.4,0,0,20.4,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,2457,21-01-16 18:15,21-01-16 18:30,480,1.1,,607,32,8,7,3,0,0,10,Credit Card,82,744,605,767,733)[0m
+[0m[[0minfo[0m] [0m(null,3345,07-01-16 6:45,07-01-16 7:00,660,2.9,,,,,9.65,0,0,0,9.65,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,2897,02-01-16 15:45,02-01-16 15:45,180,0.6,,313,76,76,4.75,0,0,0,4.75,Cash,,225,6,225,6)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337944000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,7072,13-01-16 15:30,13-01-16 16:00,2100,17.4,,,56,6,44,5,0,5,54,Credit Card,107,230,394,686,500)[0m
+[0m[[0minfo[0m] [0m(null,6559,21-01-16 7:30,21-01-16 7:45,1020,2.9,,,,,12,2,0,1,15,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,1523,26-01-16 11:15,26-01-16 11:15,360,1.1,,970,32,8,6.75,0,0,0,6.75,Cash,107,18,610,210,470)[0m
+[0m[[0minfo[0m] [0m(null,6298,04-01-16 17:30,04-01-16 18:15,2820,18.9,,1046,76,33,48,15.6,0,4,67.6,Credit Card,,225,6,728,277)[0m
+[0m[[0minfo[0m] [0m(null,4788,24-01-16 0:45,24-01-16 1:00,1020,6.3,,807,6,28,18.75,3.95,0,1,23.7,Credit Card,10,606,617,411,545)[0m
+[0m[[0minfo[0m] [0m(null,0,21-01-16 15:45,21-01-16 16:30,2220,15.4,,,76,,40.75,9.35,0,6,56.1,Credit Card,,575,547,,)[0m
+[0m[[0minfo[0m] [0m(null,5254,17-01-16 14:15,17-01-16 14:30,600,4.8,,,32,6,14.75,0,0,0,14.75,Cash,92,385,478,686,500)[0m
+[0m[[0minfo[0m] [0m(null,225,03-01-16 0:45,03-01-16 1:00,960,0,,787,8,8,9.05,0,0,3,12.05,Cash,101,419,615,161,649)[0m
+[0m[[0minfo[0m] [0m(null,3253,25-01-16 15:00,25-01-16 15:15,660,0.1,,,8,32,9.25,2,0,0,11.25,Credit Card,107,599,346,385,478)[0m
+[0m[[0minfo[0m] [0m(null,148,11-01-16 22:15,11-01-16 22:15,600,2.3,,911,28,8,9.25,0,0,0,9.25,Cash,,700,659,688,206)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337946000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,6783,21-01-16 8:15,21-01-16 8:30,720,5,,,8,22,15,0,0,0,15,Cash,,599,346,604,668)[0m
+[0m[[0minfo[0m] [0m(null,1631,22-01-16 18:15,22-01-16 18:30,840,2.5,,,16,15,10.75,0,0,0,10.75,Cash,101,527,24,181,726)[0m
+[0m[[0minfo[0m] [0m(null,2946,11-01-16 23:15,11-01-16 23:15,480,1.4,,,6,6,7.75,0,0,1,8.75,Cash,,686,500,686,500)[0m
+[0m[[0minfo[0m] [0m(null,3919,22-01-16 12:30,22-01-16 13:00,2160,4.5,,,28,28,15.75,0,0,0,15.75,Cash,107,158,270,158,270)[0m
+[0m[[0minfo[0m] [0m(null,3338,17-01-16 9:45,17-01-16 9:45,180,0,,,2,2,4.25,0,0,0,4.25,Cash,107,684,503,684,503)[0m
+[0m[[0minfo[0m] [0m(null,6594,25-01-16 19:30,25-01-16 19:30,0,0,,,,,180,0,0,0,180,Credit Card,107,,,,)[0m
+[0m[[0minfo[0m] [0m(null,5122,13-01-16 13:30,13-01-16 13:45,360,0,,40,32,28,6,2,0,1,9,Credit Card,107,744,605,395,408)[0m
+[0m[[0minfo[0m] [0m(null,930,24-01-16 11:45,24-01-16 12:00,600,0.1,,685,28,7,9.5,0,0,0,9.5,Cash,107,681,196,408,559)[0m
+[0m[[0minfo[0m] [0m(null,6257,29-01-16 18:15,29-01-16 18:30,1560,0,,308,32,6,16.75,4.15,0,0,20.9,Credit Card,107,18,610,421,45)[0m
+[0m[[0minfo[0m] [0m(null,5454,01-01-16 18:00,01-01-16 18:00,0,0,,379,32,3,3.25,0,0,0,3.25,Cash,,64,231,166,725)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337948000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,3352,01-01-16 12:15,01-01-16 12:30,480,1.8,,334,32,8,7.45,1,0,0,8.45,Credit Card,109,744,605,294,113)[0m
+[0m[[0minfo[0m] [0m(null,6043,29-01-16 22:00,29-01-16 22:00,480,2.9,,,7,22,10.25,2.05,0,0,12.3,Credit Card,101,173,203,604,668)[0m
+[0m[[0minfo[0m] [0m(null,2331,21-01-16 19:30,21-01-16 20:15,2280,1,,,3,3,17.5,3.9,0,2,23.4,Credit Card,101,660,120,660,120)[0m
+[0m[[0minfo[0m] [0m(null,4843,15-01-16 15:00,15-01-16 15:15,660,1.9,,16,8,32,9,3,0,0,12,Credit Card,107,161,649,18,610)[0m
+[0m[[0minfo[0m] [0m(null,1922,19-01-16 5:15,19-01-16 5:15,0,0,,,,,7,3,0,0,10,Credit Card,90,,,,)[0m
+[0m[[0minfo[0m] [0m(null,8204,22-01-16 5:30,22-01-16 5:30,0,0,,,6,6,3.25,0,0,0,3.25,Cash,107,686,500,686,500)[0m
+[0m[[0minfo[0m] [0m(null,3033,09-01-16 1:45,09-01-16 1:45,360,1,,,,,6,0,0,1.5,7.5,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,8483,28-01-16 14:15,28-01-16 14:30,480,2,,,,,7.65,0,0,0.75,8.4,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,1438,09-01-16 19:00,09-01-16 19:00,300,0.8,,792,8,8,5.5,4,0,1,10.5,Credit Card,,210,470,419,615)[0m
+[0m[[0minfo[0m] [0m(null,6285,20-01-16 12:15,20-01-16 12:45,1740,11.5,,313,32,76,45.5,9.1,0,0,54.6,Credit Card,,744,605,225,6)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337950000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,6134,16-01-16 8:00,16-01-16 8:00,0,0,,,8,8,3.25,0,0,1,4.25,Cash,107,599,346,599,346)[0m
+[0m[[0minfo[0m] [0m(null,279,27-01-16 14:45,27-01-16 14:45,360,0,,504,32,32,6.25,2,0,0,8.25,Credit Card,8,30,405,744,605)[0m
+[0m[[0minfo[0m] [0m(null,3603,31-01-16 19:15,31-01-16 19:45,1320,10.6,,,76,,28,9.6,0,20,57.6,Credit Card,10,575,547,,)[0m
+[0m[[0minfo[0m] [0m(null,1362,06-01-16 17:15,06-01-16 17:15,540,1.3,,504,32,32,7.5,2,0,0,9.5,Credit Card,,18,610,744,605)[0m
+[0m[[0minfo[0m] [0m(null,4403,16-01-16 20:00,16-01-16 20:15,900,3,,,,,11.75,0,0,0,11.75,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,1321,21-01-16 20:30,21-01-16 20:45,420,2.6,,,8,8,9.5,0,0,0,9.5,Cash,,599,346,599,346)[0m
+[0m[[0minfo[0m] [0m(null,71,25-01-16 18:45,25-01-16 19:00,1560,3.5,,244,32,24,14.75,0,0,0,14.75,Cash,101,18,610,267,614)[0m
+[0m[[0minfo[0m] [0m(null,6250,19-01-16 10:00,19-01-16 10:00,240,0.8,,1010,28,28,5.5,2,0,0,7.5,Credit Card,,411,545,700,659)[0m
+[0m[[0minfo[0m] [0m(null,2941,16-01-16 23:15,16-01-16 23:15,180,0,,364,6,7,5,2,0,1,8,Credit Card,107,359,46,151,130)[0m
+[0m[[0minfo[0m] [0m(null,6524,18-01-16 0:00,18-01-16 0:00,120,0.02,,268,39,39,3,0,0,0,3,Cash,,364,710,364,710)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337952000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,1341,21-01-16 19:15,21-01-16 19:15,540,1.1,,134,8,24,7,1,0,0,8,Credit Card,107,210,470,45,163)[0m
+[0m[[0minfo[0m] [0m(null,7986,29-01-16 1:00,29-01-16 1:15,1140,4.2,,187,6,77,13.75,0,0,1,14.75,Cash,,564,717,646,574)[0m
+[0m[[0minfo[0m] [0m(null,6059,06-01-16 12:00,06-01-16 12:15,1080,2.1,,676,32,28,10.65,0,0,1.5,12.15,Cash,109,744,605,779,81)[0m
+[0m[[0minfo[0m] [0m(null,1539,19-01-16 9:00,19-01-16 9:00,240,0,,16,8,32,5,0,0,0,5,Cash,107,419,615,18,610)[0m
+[0m[[0minfo[0m] [0m(null,6298,25-01-16 9:45,25-01-16 10:00,540,1.8,,16,8,32,8.5,2,0,0,10.5,Credit Card,,413,636,18,610)[0m
+[0m[[0minfo[0m] [0m(null,4715,26-01-16 19:45,26-01-16 19:45,300,0.5,,16,32,32,5.5,0,0,0,5.5,Cash,,64,231,18,610)[0m
+[0m[[0minfo[0m] [0m(null,2519,31-01-16 15:45,31-01-16 16:00,600,2.4,,,8,8,9.5,2,0,0,11.5,Credit Card,,599,346,599,346)[0m
+[0m[[0minfo[0m] [0m(null,6207,04-01-16 17:00,04-01-16 17:15,360,1.3,,,7,7,6.5,0,0,0,6.5,Cash,109,173,203,173,203)[0m
+[0m[[0minfo[0m] [0m(null,6514,01-01-16 22:45,01-01-16 22:45,180,0.6,,522,7,7,4.75,2,0,0,6.75,Credit Card,,725,518,353,234)[0m
+[0m[[0minfo[0m] [0m(null,5157,30-01-16 16:30,30-01-16 17:15,2160,6.2,,,3,15,22.5,0,0,1,23.5,Cash,10,660,120,181,726)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337954000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,8207,05-01-16 15:45,05-01-16 15:45,0,0,,,,,7.25,2.18,0,0,9.43,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,5404,05-01-16 20:00,05-01-16 20:15,1080,9.7,,,76,12,25.75,7.44,0,4,37.19,Credit Card,,575,547,588,258)[0m
+[0m[[0minfo[0m] [0m(null,3121,04-01-16 17:45,04-01-16 18:00,540,1.4,,970,32,8,7.5,0,0,0,7.5,Cash,107,18,610,210,470)[0m
+[0m[[0minfo[0m] [0m(null,6124,20-01-16 22:45,20-01-16 22:45,0,0,,,,,46.25,9.25,0,0,55.5,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,8327,15-01-16 14:15,15-01-16 14:30,1080,0,,,32,24,12.75,2,0,0,14.75,Credit Card,109,385,478,199,510)[0m
+[0m[[0minfo[0m] [0m(null,2366,18-01-16 15:15,18-01-16 15:30,360,1.4,,930,28,32,7,0,0,1.5,8.5,Cash,107,395,408,329,69)[0m
+[0m[[0minfo[0m] [0m(null,2774,12-01-16 0:45,12-01-16 1:00,360,0,,911,8,8,6,0,0,0,6,Cash,107,294,113,688,206)[0m
+[0m[[0minfo[0m] [0m(null,4548,01-01-16 1:15,01-01-16 1:30,480,0,,1101,22,24,7.25,2,0,1.5,10.75,Credit Card,107,165,176,753,551)[0m
+[0m[[0minfo[0m] [0m(null,2751,09-01-16 9:15,09-01-16 9:30,300,1.2,,140,7,8,6.5,0,0,0,6.5,Cash,107,618,407,695,366)[0m
+[0m[[0minfo[0m] [0m(null,3654,28-01-16 18:00,28-01-16 18:15,720,1.9,,,8,24,9,2,0,0,11,Credit Card,107,599,346,199,510)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337956000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,6738,01-01-16 1:00,01-01-16 1:15,480,1.29,,,28,28,6.85,0,0,0,6.85,Cash,,158,270,158,270)[0m
+[0m[[0minfo[0m] [0m(null,5049,16-01-16 17:15,16-01-16 17:15,480,1.3,,512,7,7,7,0,0,1,8,Cash,,618,407,642,32)[0m
+[0m[[0minfo[0m] [0m(null,4523,21-01-16 18:00,21-01-16 18:00,0,0,,313,76,76,3.25,0,0,0,3.25,Cash,,225,6,225,6)[0m
+[0m[[0minfo[0m] [0m(null,2605,20-01-16 10:30,20-01-16 10:30,360,0.8,,899,8,8,5.45,0,0,0,5.45,Cash,,294,113,170,351)[0m
+[0m[[0minfo[0m] [0m(null,8541,13-01-16 20:30,13-01-16 20:45,660,1.8,,807,32,28,8.5,0,0,0,8.5,Cash,109,744,605,411,545)[0m
+[0m[[0minfo[0m] [0m(null,4785,22-01-16 20:45,22-01-16 20:45,120,0,,911,8,8,4,0.02,0,1,5.02,Credit Card,107,167,754,688,206)[0m
+[0m[[0minfo[0m] [0m(null,1694,14-01-16 13:45,14-01-16 14:00,300,1.7,,,25,,6.05,0,0,0,6.05,Cash,,147,530,,)[0m
+[0m[[0minfo[0m] [0m(null,7629,20-01-16 18:15,20-01-16 18:30,540,1.7,,749,32,28,8,3,0,0,11,Credit Card,,744,605,681,196)[0m
+[0m[[0minfo[0m] [0m(null,436,19-01-16 19:45,19-01-16 19:45,180,0.5,,334,8,8,4.5,1,0,0,5.5,Credit Card,,688,206,294,113)[0m
+[0m[[0minfo[0m] [0m(null,7160,08-01-16 13:30,08-01-16 13:30,300,1.1,,307,8,32,6.25,0,0,0,6.25,Cash,101,161,649,64,231)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337958000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,1202,16-01-16 20:00,16-01-16 20:00,720,1.1,,970,8,8,6.5,0,0,2,8.5,Cash,,294,113,210,470)[0m
+[0m[[0minfo[0m] [0m(null,3466,08-01-16 16:00,08-01-16 16:00,0,0,,,,,33.25,6.65,0,0,39.9,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,1627,03-01-16 12:15,03-01-16 13:00,3300,21.6,,982,76,7,56.75,12.15,0,4,72.9,Credit Card,,225,6,618,407)[0m
+[0m[[0minfo[0m] [0m(null,2618,21-01-16 16:15,21-01-16 16:15,300,0.9,,40,32,28,5.5,0,0,0,5.5,Cash,107,18,610,395,408)[0m
+[0m[[0minfo[0m] [0m(null,2236,26-01-16 7:45,26-01-16 7:45,420,1.8,,959,28,8,8,1,0,0,9,Credit Card,101,395,408,167,754)[0m
+[0m[[0minfo[0m] [0m(null,8719,31-01-16 18:45,31-01-16 18:45,420,2.1,,694,8,7,8.5,2,0,0,10.5,Credit Card,,130,532,595,671)[0m
+[0m[[0minfo[0m] [0m(null,6947,14-01-16 14:00,14-01-16 14:15,420,1.1,,,,,6.75,0,0,0,6.75,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,6527,14-01-16 14:00,14-01-16 14:15,900,5.4,,,32,7,16.5,0,0,0,16.5,Cash,109,385,478,173,203)[0m
+[0m[[0minfo[0m] [0m(null,8482,10-01-16 19:00,10-01-16 19:15,240,0.9,,504,32,32,5.5,3,0,1.5,10,Credit Card,,30,405,744,605)[0m
+[0m[[0minfo[0m] [0m(null,3937,01-01-16 18:15,01-01-16 18:30,300,0,,607,8,8,6.75,0,0,0,6.75,Cash,119,767,733,767,733)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337960000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,5409,15-01-16 22:00,15-01-16 22:15,120,0.2,,792,8,8,3.75,0,0,0,3.75,Cash,107,419,615,419,615)[0m
+[0m[[0minfo[0m] [0m(null,6468,28-01-16 6:30,28-01-16 6:45,360,1.9,,792,32,8,8.25,0,0,0,8.25,Cash,,64,231,419,615)[0m
+[0m[[0minfo[0m] [0m(null,6692,28-01-16 10:45,28-01-16 11:00,780,4.6,,,8,7,14.25,0,0,1,15.25,Cash,,599,346,173,203)[0m
+[0m[[0minfo[0m] [0m(null,53,16-01-16 4:45,16-01-16 4:45,120,0,,225,8,8,4.25,0,0,1.5,5.75,Cash,8,170,351,754,410)[0m
+[0m[[0minfo[0m] [0m(null,3877,02-01-16 14:30,02-01-16 15:15,3120,1.5,,,56,,61,0,0,3,64,Cash,107,230,394,,)[0m
+[0m[[0minfo[0m] [0m(null,3371,02-01-16 18:45,02-01-16 18:45,720,1,,,6,6,7.75,0,0,1,8.75,Cash,82,686,500,686,500)[0m
+[0m[[0minfo[0m] [0m(null,635,01-01-16 13:30,01-01-16 14:30,3060,21.5,,,28,,59.25,0,0,0,59.25,Cash,,158,270,,)[0m
+[0m[[0minfo[0m] [0m(null,1141,27-01-16 16:15,27-01-16 17:00,2880,18.3,,313,32,76,46.25,7,0,0,53.25,Credit Card,,744,605,225,6)[0m
+[0m[[0minfo[0m] [0m(null,7280,05-01-16 11:30,05-01-16 12:15,3360,1.3,,124,28,76,57.5,0,0,0,57.5,Cash,107,411,545,549,699)[0m
+[0m[[0minfo[0m] [0m(null,6965,26-01-16 6:30,26-01-16 6:30,180,0.96,,,,,5.5,0,0,0,5.5,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337962000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,7171,16-01-16 19:45,16-01-16 20:00,360,0.8,,911,8,8,5.75,0,0,1,6.75,Cash,,167,754,688,206)[0m
+[0m[[0minfo[0m] [0m(null,5224,09-01-16 17:15,09-01-16 17:30,600,3.6,,735,8,22,11.75,0,0,0,11.75,Cash,107,754,410,535,512)[0m
+[0m[[0minfo[0m] [0m(null,826,20-01-16 20:15,20-01-16 20:30,1020,0,,,32,24,14.75,3.65,0,0,18.4,Credit Card,8,385,478,199,510)[0m
+[0m[[0minfo[0m] [0m(null,1589,01-01-16 19:30,01-01-16 19:45,600,0,,380,8,8,7.65,0,0,1,8.65,Cash,82,170,351,207,239)[0m
+[0m[[0minfo[0m] [0m(null,6979,20-01-16 11:00,20-01-16 11:00,120,0.4,,16,32,32,4.25,2,0,0,6.25,Credit Card,,744,605,18,610)[0m
+[0m[[0minfo[0m] [0m(null,8210,15-01-16 13:15,15-01-16 13:30,660,1.5,,807,8,28,8.25,0,0,0,8.25,Cash,,754,410,411,545)[0m
+[0m[[0minfo[0m] [0m(null,1633,15-01-16 19:15,15-01-16 19:45,1260,0,,,8,24,14.25,0,0,0,14.25,Cash,8,599,346,199,510)[0m
+[0m[[0minfo[0m] [0m(null,6589,11-01-16 8:00,11-01-16 8:00,180,0,,16,32,32,5,1,0,1,7,Credit Card,107,744,605,18,610)[0m
+[0m[[0minfo[0m] [0m(null,6662,14-01-16 10:15,14-01-16 10:15,360,1.2,,16,8,32,6.75,0,0,0,6.75,Cash,,688,206,18,610)[0m
+[0m[[0minfo[0m] [0m(null,8192,19-01-16 20:00,19-01-16 20:15,420,1,,,1,1,6.75,0,0,0,6.75,Cash,107,37,370,37,370)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337964000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,2588,26-01-16 12:15,26-01-16 12:15,180,0.4,,16,32,32,4.5,1,0,0,5.5,Credit Card,10,18,610,18,610)[0m
+[0m[[0minfo[0m] [0m(null,2001,13-01-16 1:30,13-01-16 1:30,420,4.1,,,76,76,12.5,0,0,2,14.5,Cash,107,575,547,575,547)[0m
+[0m[[0minfo[0m] [0m(null,7229,02-01-16 5:00,02-01-16 5:00,0,0,,,,,8.65,1,0,0,9.65,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,3623,08-01-16 23:00,08-01-16 23:00,480,0,,1046,32,33,8.75,2,0,0,10.75,Credit Card,8,18,610,728,277)[0m
+[0m[[0minfo[0m] [0m(null,8149,26-01-16 18:00,26-01-16 18:00,420,1.3,,,4,77,6.75,0,0,0,6.75,Cash,,399,780,556,288)[0m
+[0m[[0minfo[0m] [0m(null,5719,02-01-16 22:15,02-01-16 22:30,540,2,,749,8,28,8.5,2,0,1.5,12,Credit Card,101,688,206,681,196)[0m
+[0m[[0minfo[0m] [0m(null,2438,15-01-16 1:45,15-01-16 1:45,180,0.9,,,25,25,4.25,0,0,0,4.25,Cash,,147,530,147,530)[0m
+[0m[[0minfo[0m] [0m(null,4089,27-01-16 17:30,27-01-16 17:45,1260,3.4,,,,,14.25,1,0,0,15.25,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,5165,30-01-16 16:15,30-01-16 16:15,0,0,,,,,15.5,3.1,0,0,18.6,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,344,21-01-16 18:15,21-01-16 18:30,300,0.7,,225,28,8,5.5,2,0,2,9.5,Credit Card,,395,408,754,410)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337966000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,5995,05-01-16 9:15,05-01-16 9:30,1380,0.5,,,56,31,22.75,4,0,4,30.75,Credit Card,8,230,394,558,388)[0m
+[0m[[0minfo[0m] [0m(null,154,15-01-16 15:30,15-01-16 15:30,240,0.5,,225,8,8,5,0,0,1,6,Cash,,688,206,754,410)[0m
+[0m[[0minfo[0m] [0m(null,3717,01-01-16 1:00,01-01-16 1:15,1200,5.35,,806,32,24,15.85,0,0,2,17.85,Cash,,30,405,19,553)[0m
+[0m[[0minfo[0m] [0m(null,5348,13-01-16 12:30,13-01-16 12:45,420,0.9,,,28,32,6.25,3,0,0,9.25,Credit Card,,158,270,385,478)[0m
+[0m[[0minfo[0m] [0m(null,81,14-01-16 16:30,14-01-16 16:30,360,0,,307,28,32,6,0,0,0,6,Cash,107,700,659,64,231)[0m
+[0m[[0minfo[0m] [0m(null,3914,14-01-16 12:00,14-01-16 12:00,300,0.6,,16,8,32,5.25,1,0,0,6.25,Credit Card,92,754,410,18,610)[0m
+[0m[[0minfo[0m] [0m(null,1931,11-01-16 18:45,11-01-16 18:45,0,0,,,,,6.25,1.56,0,0,7.81,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,4625,20-01-16 15:15,20-01-16 15:45,1980,18.1,,313,32,76,45,9.2,0,1,55.2,Credit Card,,18,610,225,6)[0m
+[0m[[0minfo[0m] [0m(null,5578,15-01-16 21:00,15-01-16 21:15,180,0.5,,,,,4.5,0,0,1,5.5,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,2573,21-01-16 17:30,21-01-16 17:30,0,0,,,,,25.75,6.44,0,0,32.19,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337968000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,8657,30-01-16 15:45,30-01-16 16:00,1020,6.65,,,,,19.5,0,0,0,19.5,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,1137,15-01-16 9:15,15-01-16 9:30,480,1,,16,32,32,6.5,0,0,0,6.5,Cash,,744,605,18,610)[0m
+[0m[[0minfo[0m] [0m(null,8451,19-01-16 20:15,19-01-16 20:30,900,5.3,,308,32,6,16.75,0,0,0,16.75,Cash,,64,231,421,45)[0m
+[0m[[0minfo[0m] [0m(null,1658,15-01-16 18:15,15-01-16 19:15,3300,19,,,56,3,50.5,10.9,0,4,65.4,Credit Card,107,230,394,660,120)[0m
+[0m[[0minfo[0m] [0m(null,7011,14-01-16 14:00,14-01-16 14:15,300,0.7,,792,32,8,6,2,0,0,8,Credit Card,101,744,605,419,615)[0m
+[0m[[0minfo[0m] [0m(null,5253,15-01-16 22:15,15-01-16 22:45,1140,7.7,,,8,4,23.25,0,0,0,23.25,Cash,107,599,346,399,780)[0m
+[0m[[0minfo[0m] [0m(null,6964,19-01-16 17:45,19-01-16 18:45,3240,0,,787,76,8,49.75,10.75,0,4,64.5,Credit Card,8,225,6,161,649)[0m
+[0m[[0minfo[0m] [0m(null,2940,19-01-16 18:45,19-01-16 19:15,1260,1.3,,749,8,28,10.75,0,0,0,10.75,Cash,109,754,410,681,196)[0m
+[0m[[0minfo[0m] [0m(null,5085,16-01-16 20:15,16-01-16 20:30,600,0,,749,8,28,8.75,0,0,1,9.75,Cash,107,210,470,681,196)[0m
+[0m[[0minfo[0m] [0m(null,5289,08-01-16 19:00,08-01-16 19:15,1380,8.7,,,3,32,24.75,0,0,0,24.75,Cash,107,660,120,385,478)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337970000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,2821,08-01-16 7:00,08-01-16 7:15,720,1.89,,807,8,28,9.75,2,0,0,11.75,Credit Card,,210,470,411,545)[0m
+[0m[[0minfo[0m] [0m(null,8201,05-01-16 7:30,05-01-16 7:45,720,2.2,,,,,10,0,0,0,10,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,2969,14-01-16 14:45,14-01-16 14:45,180,0.5,,899,32,8,4.75,0,0,0,4.75,Cash,,18,610,170,351)[0m
+[0m[[0minfo[0m] [0m(null,2374,14-01-16 12:00,14-01-16 12:00,240,0.5,,225,32,8,5,0,0,0,5,Cash,,18,610,754,410)[0m
+[0m[[0minfo[0m] [0m(null,5553,07-01-16 15:00,07-01-16 15:15,840,1.9,,334,32,8,9.75,0,0,0,9.75,Cash,,18,610,294,113)[0m
+[0m[[0minfo[0m] [0m(null,6425,21-01-16 19:45,21-01-16 20:00,420,1.6,,911,24,8,7.5,2,0,0,9.5,Credit Card,101,100,696,688,206)[0m
+[0m[[0minfo[0m] [0m(null,4673,30-01-16 0:00,30-01-16 0:00,240,0.8,,792,32,8,5.5,0,0,0,5.5,Cash,107,18,610,419,615)[0m
+[0m[[0minfo[0m] [0m(null,464,23-01-16 8:45,23-01-16 9:15,1080,8.8,,,,28,22.85,0,0,0,22.85,Cash,,,,158,270)[0m
+[0m[[0minfo[0m] [0m(null,1582,13-01-16 22:45,13-01-16 23:00,480,3.4,,,,26,10.05,0,0,0,10.05,Cash,,,,771,542)[0m
+[0m[[0minfo[0m] [0m(null,1193,12-01-16 19:30,12-01-16 20:00,1500,2.2,,749,8,28,13,2,0,1.5,16.5,Credit Card,101,210,470,681,196)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337972000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,5114,04-01-16 20:00,04-01-16 20:00,300,0,,16,8,32,6,0,0,0,6,Cash,107,754,410,18,610)[0m
+[0m[[0minfo[0m] [0m(null,6318,21-01-16 12:00,21-01-16 12:15,660,2.2,,411,32,8,9.5,0,0,0,9.5,Cash,,64,231,218,437)[0m
+[0m[[0minfo[0m] [0m(null,7506,06-01-16 20:00,06-01-16 20:00,180,0,,16,32,32,4.5,0,0,1,5.5,Cash,107,18,610,18,610)[0m
+[0m[[0minfo[0m] [0m(null,6180,24-01-16 0:30,24-01-16 0:45,540,1.7,,40,8,28,8,3,0,2.5,13.5,Credit Card,,688,206,395,408)[0m
+[0m[[0minfo[0m] [0m(null,174,27-01-16 0:45,27-01-16 1:00,420,3,,,,,8.85,0,0,0,8.85,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,7215,14-01-16 19:00,14-01-16 19:00,300,0.7,,,,,5.5,3,0,1.5,10,Credit Card,92,,,,)[0m
+[0m[[0minfo[0m] [0m(null,4038,19-01-16 20:30,19-01-16 20:30,0,0,,,,,7.75,1.55,0,0,9.3,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,2225,01-01-16 11:30,01-01-16 11:30,540,2.61,,,,,9.05,0,0,0,9.05,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,905,05-01-16 18:30,05-01-16 18:30,360,1.2,,911,32,8,6.5,3,0,0,9.5,Credit Card,107,64,231,688,206)[0m
+[0m[[0minfo[0m] [0m(null,4458,06-01-16 11:45,06-01-16 12:15,1680,17.9,,313,8,76,44.75,0,0,0,44.75,Cash,,688,206,225,6)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337974000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,1529,31-01-16 15:00,31-01-16 16:00,3600,20.7,,960,76,56,55.5,13.88,0,0,69.38,Credit Card,,225,6,433,757)[0m
+[0m[[0minfo[0m] [0m(null,6698,02-01-16 11:15,02-01-16 11:30,300,1.1,,,3,6,5.65,0,0,0,5.65,Cash,,660,120,686,500)[0m
+[0m[[0minfo[0m] [0m(null,527,15-01-16 8:45,15-01-16 9:00,600,2,,,,,9.25,2,0,0,11.25,Credit Card,109,,,,)[0m
+[0m[[0minfo[0m] [0m(null,1570,27-01-16 16:00,27-01-16 16:00,420,1.1,,807,32,28,6.25,0,0,0,6.25,Cash,107,64,231,411,545)[0m
+[0m[[0minfo[0m] [0m(null,2609,13-01-16 9:00,13-01-16 9:15,660,0,,16,28,32,7.75,0,0,0,7.75,Cash,107,779,81,18,610)[0m
+[0m[[0minfo[0m] [0m(null,1640,14-01-16 19:45,14-01-16 19:45,300,0,,40,32,28,6,2,0,1,9,Credit Card,107,18,610,395,408)[0m
+[0m[[0minfo[0m] [0m(null,1092,19-01-16 22:45,19-01-16 23:00,1380,12.2,,504,56,32,32,0,0,4,36,Cash,107,433,757,744,605)[0m
+[0m[[0minfo[0m] [0m(null,7557,19-01-16 6:15,19-01-16 6:15,300,1.6,,,,,7.25,0,0,0,7.25,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,2467,01-01-16 7:45,01-01-16 7:45,660,5.6,,,32,6,13.25,2,0,0,15.25,Credit Card,,385,478,686,500)[0m
+[0m[[0minfo[0m] [0m(null,2872,18-01-16 17:45,18-01-16 18:00,300,1,,225,32,8,5.75,2,0,1,8.75,Credit Card,,18,610,754,410)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337976000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,2478,12-01-16 12:15,12-01-16 12:30,240,0.3,,787,8,8,4.5,0,0,1,5.5,Cash,,167,754,161,649)[0m
+[0m[[0minfo[0m] [0m(null,6290,21-01-16 7:45,21-01-16 7:45,420,0.9,,792,28,8,6.25,0,0,1,7.25,Cash,101,411,545,419,615)[0m
+[0m[[0minfo[0m] [0m(null,1145,26-01-16 19:00,26-01-16 19:15,120,0.3,,,,,4.25,0,0,0,4.25,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,432,08-01-16 9:00,08-01-16 9:00,240,0,,16,32,32,5,1,0,0,6,Credit Card,107,18,610,18,610)[0m
+[0m[[0minfo[0m] [0m(null,3478,06-01-16 19:45,06-01-16 19:45,600,5.6,,,32,22,16,3.2,0,0,19.2,Credit Card,,385,478,604,668)[0m
+[0m[[0minfo[0m] [0m(null,6641,12-01-16 15:15,12-01-16 15:30,1020,0,,,77,8,20.5,0,0,0,20.5,Cash,8,556,288,599,346)[0m
+[0m[[0minfo[0m] [0m(null,4126,29-01-16 8:15,29-01-16 8:30,1560,8.6,,,4,32,24,0,0,0,24,Cash,101,399,780,385,478)[0m
+[0m[[0minfo[0m] [0m(null,1334,23-01-16 19:15,23-01-16 19:30,300,1,,,28,28,6,0,0,0,6,Cash,107,158,270,158,270)[0m
+[0m[[0minfo[0m] [0m(null,2366,08-01-16 12:30,08-01-16 12:45,840,2.8,,32,32,28,11.25,0,0,0,11.25,Cash,107,329,69,428,409)[0m
+[0m[[0minfo[0m] [0m(null,7424,20-01-16 18:15,20-01-16 18:30,360,0.6,,16,32,32,5.75,0,0,1,6.75,Cash,107,18,610,18,610)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337978000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,2868,07-01-16 13:45,07-01-16 14:00,540,2,,982,32,7,9,2,0,0,11,Credit Card,,18,610,618,407)[0m
+[0m[[0minfo[0m] [0m(null,7063,14-01-16 20:15,14-01-16 20:15,0,0,,960,56,56,3.25,0,0,0,3.25,Cash,107,433,757,433,757)[0m
+[0m[[0minfo[0m] [0m(null,4714,18-01-16 9:45,18-01-16 9:45,240,0.7,,16,28,32,5,2,0,0,7,Credit Card,82,395,408,18,610)[0m
+[0m[[0minfo[0m] [0m(null,1283,20-01-16 19:00,20-01-16 19:15,720,1.1,,225,28,8,8,3,0,0.5,11.5,Credit Card,101,411,545,754,410)[0m
+[0m[[0minfo[0m] [0m(null,1951,08-01-16 0:45,08-01-16 0:45,240,1.4,,380,24,8,6.75,0,0,1,7.75,Cash,,45,163,207,239)[0m
+[0m[[0minfo[0m] [0m(null,7044,29-01-16 18:30,29-01-16 18:30,300,0.7,,140,8,8,5.75,0,0,1,6.75,Cash,,474,204,695,366)[0m
+[0m[[0minfo[0m] [0m(null,8586,11-01-16 12:00,11-01-16 12:30,1020,0.3,,,4,8,19,0,0,0,19,Cash,107,399,780,599,346)[0m
+[0m[[0minfo[0m] [0m(null,716,22-01-16 9:30,22-01-16 9:45,1140,7.5,,,4,8,21.25,0,0,0,21.25,Cash,,399,780,599,346)[0m
+[0m[[0minfo[0m] [0m(null,7826,17-01-16 3:45,17-01-16 3:45,240,0,,522,7,7,5.5,0,0,1,6.5,Cash,8,353,234,353,234)[0m
+[0m[[0minfo[0m] [0m(null,1401,25-01-16 11:15,25-01-16 11:15,360,1.1,,16,8,32,6.25,0,0,0,6.25,Cash,,210,470,18,610)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337980000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,1964,06-01-16 14:15,06-01-16 14:15,480,1.1,,749,32,28,6.75,2,0,0,8.75,Credit Card,,18,610,681,196)[0m
+[0m[[0minfo[0m] [0m(null,5189,20-01-16 11:45,20-01-16 12:00,1260,11,,1046,56,33,28.25,3,0,4,35.25,Credit Card,107,433,757,728,277)[0m
+[0m[[0minfo[0m] [0m(null,5400,28-01-16 9:30,28-01-16 9:30,240,0.6,,16,28,32,5.25,0,0,0,5.25,Cash,101,411,545,18,610)[0m
+[0m[[0minfo[0m] [0m(null,1955,26-01-16 19:00,26-01-16 19:00,180,0.7,,,3,3,5,2,0,0,7,Credit Card,,660,120,660,120)[0m
+[0m[[0minfo[0m] [0m(null,5289,28-01-16 0:45,28-01-16 1:00,540,2.9,,1077,28,7,10.75,0,0,1,11.75,Cash,107,681,196,724,47)[0m
+[0m[[0minfo[0m] [0m(null,5643,21-01-16 21:45,21-01-16 21:45,720,1.3,,911,32,8,7.85,4,0,0,11.85,Credit Card,20,18,610,688,206)[0m
+[0m[[0minfo[0m] [0m(null,6834,22-01-16 18:00,22-01-16 18:15,420,0,,749,32,28,6.5,2,0,0,8.5,Credit Card,107,18,610,681,196)[0m
+[0m[[0minfo[0m] [0m(null,2225,28-01-16 7:15,28-01-16 7:30,900,3.14,,,,,11.75,0,0,0,11.75,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,6357,21-01-16 8:30,21-01-16 8:45,240,0.4,,16,8,32,5,3,0,0,8,Credit Card,101,170,351,18,610)[0m
+[0m[[0minfo[0m] [0m(null,7382,27-01-16 7:15,27-01-16 7:30,240,0.8,,225,8,8,5.25,0,0,0,5.25,Cash,,161,649,754,410)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337982000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,2768,27-01-16 11:00,27-01-16 11:00,540,0.1,,607,28,8,8.25,4,0,0,12.25,Credit Card,107,395,408,767,733)[0m
+[0m[[0minfo[0m] [0m(null,2418,09-01-16 18:00,09-01-16 18:00,180,0.6,,225,32,8,5,2,0,0,7,Credit Card,,64,231,754,410)[0m
+[0m[[0minfo[0m] [0m(null,6980,02-01-16 14:15,02-01-16 14:30,600,0.1,,307,33,32,8.25,1,0,1,10.25,Credit Card,107,728,277,64,231)[0m
+[0m[[0minfo[0m] [0m(null,4723,20-01-16 3:30,20-01-16 3:45,480,1.9,,,5,14,7.75,0,0,0,7.75,Cash,101,109,708,441,771)[0m
+[0m[[0minfo[0m] [0m(null,4306,18-01-16 18:15,18-01-16 18:15,240,0.7,,16,8,32,5.25,2,0,0,7.25,Credit Card,107,170,351,18,610)[0m
+[0m[[0minfo[0m] [0m(null,2255,30-01-16 2:15,30-01-16 2:30,540,2.5,,,28,28,9.5,2,0,0,11.5,Credit Card,107,158,270,158,270)[0m
+[0m[[0minfo[0m] [0m(null,2659,09-01-16 11:30,09-01-16 11:30,540,0,,316,8,8,7,0,0,0,7,Cash,101,294,113,130,532)[0m
+[0m[[0minfo[0m] [0m(null,5960,06-01-16 12:15,06-01-16 12:15,240,0.9,,,6,6,5.25,0,0,0,5.25,Cash,107,686,500,686,500)[0m
+[0m[[0minfo[0m] [0m(null,170,29-01-16 16:15,29-01-16 16:15,240,0,,16,,32,5.25,0,0,0,5.25,Cash,107,,,18,610)[0m
+[0m[[0minfo[0m] [0m(null,2510,19-01-16 14:00,19-01-16 14:15,540,1.1,,16,32,32,6.75,2,0,0,8.75,Credit Card,,744,605,18,610)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337984000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,4530,20-01-16 13:00,20-01-16 13:00,360,0.7,,16,32,32,5.5,0.6,0,0,6.1,Credit Card,,18,610,18,610)[0m
+[0m[[0minfo[0m] [0m(null,6060,01-01-16 15:30,01-01-16 15:45,780,7.8,,,77,8,17.85,0,0,0,17.85,Cash,,556,288,599,346)[0m
+[0m[[0minfo[0m] [0m(null,4032,28-01-16 21:45,28-01-16 21:45,420,1.3,,225,32,8,6.75,2,0,0,8.75,Credit Card,82,744,605,754,410)[0m
+[0m[[0minfo[0m] [0m(null,3621,20-01-16 19:30,20-01-16 19:45,840,2.7,,,6,7,10.75,2,0,0,12.75,Credit Card,,686,500,173,203)[0m
+[0m[[0minfo[0m] [0m(null,2786,16-01-16 0:15,16-01-16 0:30,1320,0.3,,680,8,6,18.25,0,0,0,18.25,Cash,107,754,410,272,371)[0m
+[0m[[0minfo[0m] [0m(null,7579,09-01-16 21:15,09-01-16 21:30,540,1.3,,13,8,8,7,2,0,0,9,Credit Card,65,210,470,474,204)[0m
+[0m[[0minfo[0m] [0m(null,7547,31-01-16 14:15,31-01-16 14:30,660,2.8,,787,33,8,11,0,0,1,12,Cash,,728,277,161,649)[0m
+[0m[[0minfo[0m] [0m(null,6266,31-01-16 18:00,31-01-16 18:15,1020,0,,,3,1,12.75,0,0,0,12.75,Cash,8,660,120,37,370)[0m
+[0m[[0minfo[0m] [0m(null,1727,29-01-16 7:30,29-01-16 7:30,420,1.1,,,,,7,0,0,0,7,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,2907,28-01-16 15:00,28-01-16 15:15,300,0,,307,32,32,5.75,0,0,0,5.75,Cash,109,64,231,64,231)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337986000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,4113,12-01-16 16:00,12-01-16 16:00,0,0,,,,,5.75,1.44,0,0,7.19,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,1525,12-01-16 19:00,12-01-16 19:00,0,0,,254,32,28,3.25,0,0,0,3.25,Cash,,18,610,591,433)[0m
+[0m[[0minfo[0m] [0m(null,8552,02-01-16 14:15,02-01-16 14:15,0,0,,,,,10.25,2.05,0,0,12.3,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,6916,28-01-16 20:45,28-01-16 20:45,480,0,,,22,7,8,1.5,0,0,9.5,Credit Card,107,604,668,173,203)[0m
+[0m[[0minfo[0m] [0m(null,5372,06-01-16 8:30,06-01-16 8:30,120,0.4,,,,,4.25,1,0,0,5.25,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,5310,19-01-16 13:30,19-01-16 13:45,660,1.6,,959,32,8,8.5,3,0,0,11.5,Credit Card,107,18,610,167,754)[0m
+[0m[[0minfo[0m] [0m(null,4076,20-01-16 10:45,20-01-16 11:30,2280,0,,,11,,36,5,0,0,41,Credit Card,107,605,347,,)[0m
+[0m[[0minfo[0m] [0m(null,843,03-01-16 19:30,03-01-16 19:30,0,0,,504,32,32,3.25,0,0,0.5,3.75,Cash,107,744,605,744,605)[0m
+[0m[[0minfo[0m] [0m(null,6433,08-01-16 21:45,08-01-16 22:00,600,1.1,,886,7,6,7.5,2,0,1,10.5,Credit Card,,730,775,564,717)[0m
+[0m[[0minfo[0m] [0m(null,8190,14-01-16 17:15,14-01-16 17:15,600,1.8,,316,8,8,8.5,0,0,0,8.5,Cash,,167,754,130,532)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337988000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,5292,14-01-16 9:00,14-01-16 9:15,540,1,,,,,7,2,0,1,10,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,2433,02-01-16 22:30,02-01-16 22:45,480,2.7,,244,28,24,9.75,0,0,0,9.75,Cash,,681,196,267,614)[0m
+[0m[[0minfo[0m] [0m(null,5301,22-01-16 17:15,22-01-16 17:15,660,1.4,,805,32,8,7.5,0,0,0,7.5,Cash,,744,605,526,511)[0m
+[0m[[0minfo[0m] [0m(null,5064,23-01-16 22:00,23-01-16 22:00,300,2.2,,910,28,24,8.25,0,0,1,9.25,Cash,107,395,408,427,286)[0m
+[0m[[0minfo[0m] [0m(null,1213,18-01-16 19:00,18-01-16 19:15,360,1.1,,676,32,28,6.25,0,0,0,6.25,Cash,92,18,610,779,81)[0m
+[0m[[0minfo[0m] [0m(null,593,27-01-16 23:15,27-01-16 23:15,540,1.4,,307,8,32,7.25,3,0,1,11.25,Credit Card,72,419,615,64,231)[0m
+[0m[[0minfo[0m] [0m(null,3249,05-01-16 13:15,05-01-16 13:30,1440,0,,,76,24,41.75,0,0,4,45.75,Cash,109,575,547,199,510)[0m
+[0m[[0minfo[0m] [0m(null,3732,13-01-16 13:45,13-01-16 13:45,0,0,,,,,22.5,5.63,0,0,28.13,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,5127,19-01-16 21:15,19-01-16 21:30,600,1.7,,930,8,32,8.25,2,0,0,10.25,Credit Card,10,210,470,329,69)[0m
+[0m[[0minfo[0m] [0m(null,1381,05-01-16 22:45,05-01-16 23:00,240,0.7,,970,8,8,5.25,1,0,1,7.25,Credit Card,,419,615,210,470)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337990000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,492,11-01-16 5:30,11-01-16 6:00,1800,15.8,,,,,40,0,0,0,40,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,1530,02-01-16 15:45,02-01-16 16:00,720,0.3,,,8,6,13.85,0,0,0,13.85,Cash,107,599,346,686,500)[0m
+[0m[[0minfo[0m] [0m(null,8371,23-01-16 23:15,23-01-16 23:15,180,0.7,,,,,4.75,0,0,2,6.75,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,7927,16-01-16 19:15,16-01-16 19:15,300,0.6,,970,8,8,5.25,0,0,1,6.25,Cash,92,754,410,210,470)[0m
+[0m[[0minfo[0m] [0m(null,7284,21-01-16 17:30,21-01-16 17:45,720,1,,16,32,32,8.5,3,0,0,11.5,Credit Card,,744,605,18,610)[0m
+[0m[[0minfo[0m] [0m(null,6532,27-01-16 20:30,27-01-16 20:45,900,3.9,,,6,4,13,3,0,0,16,Credit Card,,686,500,399,780)[0m
+[0m[[0minfo[0m] [0m(null,751,18-01-16 13:45,18-01-16 14:00,840,3.7,,,32,24,13,0,0,0,13,Cash,92,385,478,199,510)[0m
+[0m[[0minfo[0m] [0m(null,3351,16-01-16 21:15,16-01-16 21:30,540,1.5,,,,,7.5,0,0,0,7.5,Cash,109,,,,)[0m
+[0m[[0minfo[0m] [0m(null,3127,05-01-16 9:15,05-01-16 9:30,660,1.8,,16,8,32,8.75,0,0,0,8.75,Cash,101,294,113,18,610)[0m
+[0m[[0minfo[0m] [0m(null,1098,16-01-16 2:00,16-01-16 2:30,1800,0,,694,7,7,24.25,15.35,0,52.5,92.1,Credit Card,8,618,407,595,671)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337992000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,4221,09-01-16 19:30,09-01-16 19:30,0,0,,,,,8.5,1,0,0,9.5,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,4189,08-01-16 20:15,08-01-16 20:15,780,0.1,,871,6,7,9.75,0,0,1,10.75,Cash,107,355,333,144,741)[0m
+[0m[[0minfo[0m] [0m(null,4644,27-01-16 8:15,27-01-16 8:15,480,0.87,,16,8,32,7,2,0,0,9,Credit Card,,754,410,18,610)[0m
+[0m[[0minfo[0m] [0m(null,2021,07-01-16 15:45,07-01-16 15:45,360,0.8,,,8,7,7.25,0,0,0,7.25,Cash,109,599,346,173,203)[0m
+[0m[[0minfo[0m] [0m(null,1539,21-01-16 10:30,21-01-16 10:45,600,0.1,,807,8,28,9,0,0,1,10,Cash,107,688,206,411,545)[0m
+[0m[[0minfo[0m] [0m(null,5076,23-01-16 14:30,23-01-16 14:30,720,1.4,,,3,6,8,0,0,0,8,Cash,,660,120,686,500)[0m
+[0m[[0minfo[0m] [0m(null,6457,28-01-16 9:45,28-01-16 10:00,480,0.1,,,7,6,8.25,1,0,0,9.25,Credit Card,107,173,203,686,500)[0m
+[0m[[0minfo[0m] [0m(null,6570,24-01-16 21:30,24-01-16 21:45,540,0,,,28,24,9,0,0,1,10,Cash,107,158,270,199,510)[0m
+[0m[[0minfo[0m] [0m(null,1570,07-01-16 0:45,07-01-16 0:45,240,1,,504,8,32,6,0,0,2,8,Cash,107,754,410,744,605)[0m
+[0m[[0minfo[0m] [0m(null,5076,20-01-16 17:15,20-01-16 18:00,2280,11.4,,,76,,32,0,0,4,36,Cash,,575,547,,)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337994000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,7355,15-01-16 19:45,15-01-16 20:00,420,0,,805,8,8,6.5,0,0,1,7.5,Cash,8,419,615,526,511)[0m
+[0m[[0minfo[0m] [0m(null,5792,18-01-16 13:30,18-01-16 13:45,960,6.9,,,32,39,24.25,3,0,0,27.25,Credit Card,107,385,478,470,676)[0m
+[0m[[0minfo[0m] [0m(null,792,07-01-16 12:15,07-01-16 12:30,600,1.7,,970,32,8,8.5,0,0,0,8.5,Cash,,18,610,210,470)[0m
+[0m[[0minfo[0m] [0m(null,4138,15-01-16 19:00,15-01-16 19:00,300,0,,140,8,8,5,1,0,0,6,Credit Card,107,754,410,695,366)[0m
+[0m[[0minfo[0m] [0m(null,8120,25-01-16 19:00,25-01-16 19:15,780,4.5,,,8,28,14.5,0,0,0,14.5,Cash,,599,346,158,270)[0m
+[0m[[0minfo[0m] [0m(null,4063,08-01-16 0:15,08-01-16 0:30,1560,13.8,,,76,23,35.75,0,0,4,39.75,Credit Card,109,575,547,136,517)[0m
+[0m[[0minfo[0m] [0m(null,2925,02-01-16 2:45,02-01-16 3:00,480,4.8,,,8,22,12.25,0,0,0,12.25,Cash,,599,346,604,668)[0m
+[0m[[0minfo[0m] [0m(null,715,17-01-16 8:15,17-01-16 8:15,300,1,,792,8,8,6.25,1,0,0,7.25,Credit Card,107,294,113,419,615)[0m
+[0m[[0minfo[0m] [0m(null,880,11-01-16 22:45,11-01-16 22:45,0,0,,,,,34,0,0,0,34,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,6956,30-01-16 21:15,30-01-16 21:15,480,1.9,,,,,8.25,0,0,1,9.25,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337996000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,4326,23-01-16 22:45,23-01-16 23:00,960,3.1,,1007,8,7,12,0,0,0,12,Cash,,419,615,83,705)[0m
+[0m[[0minfo[0m] [0m(null,3896,23-01-16 10:30,23-01-16 10:45,600,2.3,,,7,3,9.75,3,0,1,13.75,Credit Card,,173,203,660,120)[0m
+[0m[[0minfo[0m] [0m(null,4106,16-01-16 2:30,16-01-16 2:30,360,1.5,,,24,24,7,0,0,1,8,Cash,101,199,510,199,510)[0m
+[0m[[0minfo[0m] [0m(null,2893,21-01-16 0:30,21-01-16 0:30,420,1,,787,8,8,6.25,0,0,0,6.25,Cash,10,210,470,161,649)[0m
+[0m[[0minfo[0m] [0m(null,7086,22-01-16 3:00,22-01-16 3:00,300,0,,,8,28,8.75,0,0,1,9.75,Cash,107,599,346,158,270)[0m
+[0m[[0minfo[0m] [0m(null,8016,21-01-16 11:30,21-01-16 11:30,840,0,,,6,7,10.5,2.6,0,0,13.1,Credit Card,8,686,500,173,203)[0m
+[0m[[0minfo[0m] [0m(null,6777,20-01-16 12:15,20-01-16 12:30,1500,18,,504,76,32,44,9.6,0,4,57.6,Credit Card,,225,6,744,605)[0m
+[0m[[0minfo[0m] [0m(null,7210,02-01-16 21:45,02-01-16 22:00,360,0,,543,7,7,6.25,0,0,1,7.25,Cash,107,595,671,730,775)[0m
+[0m[[0minfo[0m] [0m(null,772,02-01-16 17:30,02-01-16 17:30,480,2.8,,982,32,7,10,3,0,0,13,Credit Card,,64,231,618,407)[0m
+[0m[[0minfo[0m] [0m(null,1149,23-01-16 23:15,23-01-16 23:15,60,0,,16,32,32,3.5,0,0,1,4.5,Cash,107,18,610,18,610)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563337998000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,6353,17-01-16 5:00,17-01-16 5:15,420,0,,307,8,32,6.75,0,0,1,7.75,Cash,8,210,470,64,231)[0m
+[0m[[0minfo[0m] [0m(null,4427,24-01-16 5:45,24-01-16 6:00,540,0.1,,,28,60,10.75,2.15,0,0,12.9,Credit Card,107,158,270,557,700)[0m
+[0m[[0minfo[0m] [0m(null,5578,09-01-16 12:00,09-01-16 12:00,240,0.9,,,,,5.5,0,0,0,5.5,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,1474,19-01-16 15:45,19-01-16 16:15,1860,10.8,,960,32,56,29.75,5.95,0,0,35.7,Credit Card,,18,610,433,757)[0m
+[0m[[0minfo[0m] [0m(null,3342,10-01-16 3:45,10-01-16 3:45,0,0,,,,,8,1,0,0,9,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,2297,23-01-16 12:45,23-01-16 12:45,240,0,,,3,6,5.5,0,0,0,5.5,Cash,107,660,120,686,500)[0m
+[0m[[0minfo[0m] [0m(null,3069,05-01-16 9:15,05-01-16 9:15,120,0.3,,16,32,32,4.25,0,0,0,4.25,Cash,107,744,605,18,610)[0m
+[0m[[0minfo[0m] [0m(null,4836,06-01-16 18:00,06-01-16 18:00,420,0,,225,32,8,5.75,0,0,0,5.75,Cash,92,18,610,754,410)[0m
+[0m[[0minfo[0m] [0m(null,654,21-01-16 17:30,21-01-16 18:00,1920,9.3,,708,32,77,28.25,5.65,0,0,33.9,Credit Card,107,18,610,699,295)[0m
+[0m[[0minfo[0m] [0m(null,4048,03-01-16 9:15,03-01-16 9:15,180,0.6,,911,8,8,4.65,0,0,0,4.65,Cash,,210,470,688,206)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338000000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,428,29-01-16 19:00,29-01-16 19:00,120,0.3,,,6,6,4,0,0,0,4,Cash,,686,500,686,500)[0m
+[0m[[0minfo[0m] [0m(null,5149,28-01-16 21:30,28-01-16 21:30,240,0,,334,8,8,5.25,0,0,0,5.25,Cash,109,210,470,294,113)[0m
+[0m[[0minfo[0m] [0m(null,1462,26-01-16 23:45,27-01-16 0:00,1080,10.3,,,32,,27.25,6.81,0,0,34.06,Credit Card,,385,478,,)[0m
+[0m[[0minfo[0m] [0m(null,4620,01-01-16 12:45,01-01-16 12:45,240,0.3,,970,8,8,4.75,3,0,0,7.75,Credit Card,,294,113,210,470)[0m
+[0m[[0minfo[0m] [0m(null,5430,19-01-16 13:45,19-01-16 14:00,420,1.2,,307,8,32,6.75,0,0,0,6.75,Cash,107,210,470,64,231)[0m
+[0m[[0minfo[0m] [0m(null,4511,20-01-16 8:30,20-01-16 8:30,240,0.4,,16,28,32,4.75,0,0,0,4.75,Cash,107,411,545,18,610)[0m
+[0m[[0minfo[0m] [0m(null,4012,25-01-16 21:15,25-01-16 21:15,0,0,,,,,11.5,2.3,0,0,13.8,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,5629,19-01-16 19:45,19-01-16 19:45,240,1.1,,40,8,28,6,1,0,0,7,Credit Card,,688,206,395,408)[0m
+[0m[[0minfo[0m] [0m(null,1436,20-01-16 9:15,20-01-16 10:30,4680,50.8,,,76,,119.25,0,0,4,123.25,Cash,109,225,6,,)[0m
+[0m[[0minfo[0m] [0m(null,6433,08-01-16 8:00,08-01-16 8:15,1080,3.3,,,6,24,12.75,2,0,0,14.75,Credit Card,,686,500,199,510)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338002000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,266,25-01-16 16:15,25-01-16 16:30,1020,5.3,,543,28,7,17,1,0,0,18,Credit Card,,681,196,730,775)[0m
+[0m[[0minfo[0m] [0m(null,6435,20-01-16 0:30,20-01-16 0:30,120,0,,807,32,28,4.75,4,0,0,8.75,Credit Card,107,18,610,411,545)[0m
+[0m[[0minfo[0m] [0m(null,107,09-01-16 23:15,09-01-16 23:30,1080,0.5,,,8,41,23.25,0,0,1,24.25,Credit Card,107,599,346,583,195)[0m
+[0m[[0minfo[0m] [0m(null,2400,08-01-16 9:30,08-01-16 9:45,60,0.2,,504,32,32,3.75,0,0,0,3.75,Cash,,744,605,744,605)[0m
+[0m[[0minfo[0m] [0m(null,1672,27-01-16 20:45,27-01-16 21:00,840,0,,,24,5,11.75,1,0,0,12.75,Credit Card,107,199,510,109,708)[0m
+[0m[[0minfo[0m] [0m(null,6940,08-01-16 13:30,08-01-16 13:45,900,1.5,,,,,9.5,2,0,0,11.5,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,7625,12-01-16 0:30,12-01-16 0:45,1440,14.4,,178,76,6,36.5,8.1,0,4,48.6,Credit Card,101,225,6,258,2)[0m
+[0m[[0minfo[0m] [0m(null,1785,15-01-16 6:30,15-01-16 7:00,1200,8.2,,,,,21.25,0,0,0,21.25,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,7724,14-01-16 20:15,14-01-16 20:30,900,0.1,,1077,8,7,11.25,3.35,0,0,14.6,Credit Card,107,419,615,724,47)[0m
+[0m[[0minfo[0m] [0m(null,2802,25-01-16 19:15,25-01-16 19:30,360,1.1,,,7,7,6.75,0,0,0,6.75,Cash,,173,203,173,203)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338004000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,53,09-01-16 4:45,09-01-16 5:00,540,0.1,,40,8,28,9.5,1,0,1,11.5,Credit Card,8,695,366,395,408)[0m
+[0m[[0minfo[0m] [0m(null,1087,15-01-16 2:00,15-01-16 2:00,0,0,,,,,5.5,1,0,0,6.5,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,6481,27-01-16 23:30,27-01-16 23:45,900,4.5,,379,24,3,15,3.2,0,1,19.2,Credit Card,,753,551,166,725)[0m
+[0m[[0minfo[0m] [0m(null,1129,21-01-16 22:00,21-01-16 22:15,900,5.5,,,,,16.5,3.3,0,0,19.8,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,3187,14-01-16 17:00,14-01-16 17:00,480,0,,,24,8,7.5,2,0,0,9.5,Credit Card,107,199,510,599,346)[0m
+[0m[[0minfo[0m] [0m(null,2016,11-01-16 8:15,11-01-16 8:30,1560,14.1,,,76,,36,3,0,6,45,Credit Card,,575,547,,)[0m
+[0m[[0minfo[0m] [0m(null,3480,07-01-16 12:45,07-01-16 13:00,660,2.2,,16,8,32,9.5,0,0,0,9.5,Cash,107,207,239,18,610)[0m
+[0m[[0minfo[0m] [0m(null,6614,06-01-16 14:30,06-01-16 14:30,420,1.5,,,8,24,7.25,2,0,0,9.25,Credit Card,92,599,346,199,510)[0m
+[0m[[0minfo[0m] [0m(null,6908,07-01-16 16:45,07-01-16 17:15,1740,11.1,,,8,11,30.75,6.35,0,1,38.1,Credit Card,82,599,346,605,347)[0m
+[0m[[0minfo[0m] [0m(null,1474,20-01-16 7:45,20-01-16 7:45,240,0.6,,807,32,28,5,2,0,0,7,Credit Card,,18,610,411,545)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338006000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,168,07-01-16 12:00,07-01-16 12:15,480,1.6,,,8,24,8,3,0,0,11,Credit Card,107,599,346,199,510)[0m
+[0m[[0minfo[0m] [0m(null,5840,21-01-16 16:00,21-01-16 17:00,3300,15,,,76,6,40.75,0,0,4,44.75,Cash,,575,547,686,500)[0m
+[0m[[0minfo[0m] [0m(null,6705,07-01-16 17:00,07-01-16 17:00,0,0,,,,,42,8.4,0,0,50.4,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,5705,11-01-16 14:00,11-01-16 14:00,0,0,,,,,50.25,10.05,0,0,60.3,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,3518,28-01-16 11:45,28-01-16 12:15,1680,17.8,,16,76,32,45,12.25,0,4,61.25,Credit Card,109,225,6,18,610)[0m
+[0m[[0minfo[0m] [0m(null,3985,04-01-16 8:00,04-01-16 8:00,360,0.8,,16,8,32,6,2,0,0,8,Credit Card,,210,470,18,610)[0m
+[0m[[0minfo[0m] [0m(null,5414,13-01-16 15:45,13-01-16 16:15,1980,0,,960,28,56,28.75,0,0,2,30.75,Cash,8,411,545,433,757)[0m
+[0m[[0minfo[0m] [0m(null,973,10-01-16 19:00,10-01-16 19:15,1080,7.6,,,8,77,21.75,4.35,0,0,26.1,Credit Card,101,599,346,556,288)[0m
+[0m[[0minfo[0m] [0m(null,1654,13-01-16 19:45,13-01-16 20:00,300,0.9,,959,8,8,5.75,0,0,0,5.75,Cash,,419,615,167,754)[0m
+[0m[[0minfo[0m] [0m(null,8030,08-01-16 7:15,08-01-16 7:30,600,1.8,,16,8,32,8.5,0,0,1,9.5,Cash,,210,470,18,610)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338008000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,6101,05-01-16 12:45,05-01-16 13:00,660,5.9,,,32,6,17,0,0,0,17,Cash,,385,478,686,500)[0m
+[0m[[0minfo[0m] [0m(null,2372,15-01-16 19:15,15-01-16 19:15,480,0,,749,32,28,7.25,0,0,1,8.25,Cash,107,18,610,681,196)[0m
+[0m[[0minfo[0m] [0m(null,1223,23-01-16 19:45,23-01-16 19:45,300,0.9,,16,28,32,5.75,0,0,1,6.75,Cash,101,681,196,18,610)[0m
+[0m[[0minfo[0m] [0m(null,7215,21-01-16 17:45,21-01-16 17:45,240,0.6,,,,,5,0,0,0,5,Cash,92,,,,)[0m
+[0m[[0minfo[0m] [0m(null,1522,06-01-16 8:15,06-01-16 8:15,120,0.6,,334,8,8,4.75,0,0,1,5.75,Cash,107,688,206,294,113)[0m
+[0m[[0minfo[0m] [0m(null,8030,23-01-16 15:00,23-01-16 15:00,240,0.9,,,8,8,5.5,0,0,0,5.5,Cash,,599,346,599,346)[0m
+[0m[[0minfo[0m] [0m(null,8688,19-01-16 14:45,19-01-16 15:00,420,1.7,,911,28,8,7.75,0,0,0,7.75,Cash,101,411,545,688,206)[0m
+[0m[[0minfo[0m] [0m(null,2137,12-01-16 9:15,12-01-16 9:30,720,2,,,,,7.85,0,0,0,7.85,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,8753,30-01-16 3:00,30-01-16 3:15,240,0,,225,8,8,4.25,0,0,0,4.25,Cash,107,754,410,754,410)[0m
+[0m[[0minfo[0m] [0m(null,2259,15-01-16 19:15,15-01-16 19:15,840,1.9,,,,,9.25,2,0,1,12.25,Credit Card,,,,,)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338010000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,1381,13-01-16 9:15,13-01-16 9:30,540,0.6,,16,8,32,6.5,0,0,0,6.5,Cash,,210,470,18,610)[0m
+[0m[[0minfo[0m] [0m(null,3775,31-01-16 18:00,31-01-16 18:00,720,2.4,,,32,24,10,0,0,0,10,Cash,,385,478,199,510)[0m
+[0m[[0minfo[0m] [0m(null,3667,11-01-16 16:00,11-01-16 16:00,0,0,,,,,56.25,11.25,0,0,67.5,Credit Card,119,,,,)[0m
+[0m[[0minfo[0m] [0m(null,1321,05-01-16 13:00,05-01-16 13:00,0,0,,,76,2,3.25,2,0,0,5.25,Credit Card,,575,547,684,503)[0m
+[0m[[0minfo[0m] [0m(null,8182,09-01-16 18:45,09-01-16 18:45,360,0,,792,8,8,5.75,0,0,1,6.75,Cash,8,210,470,419,615)[0m
+[0m[[0minfo[0m] [0m(null,2582,13-01-16 5:30,13-01-16 6:00,1500,13.5,,,8,56,35.75,0,0,0,35.75,Cash,107,599,346,230,394)[0m
+[0m[[0minfo[0m] [0m(null,7976,20-01-16 23:00,20-01-16 23:15,1140,0.2,,,8,22,15.75,2.51,0,1,19.26,Credit Card,107,599,346,604,668)[0m
+[0m[[0minfo[0m] [0m(null,6868,17-01-16 17:30,17-01-16 17:45,1200,1.3,,40,28,28,11.25,0,0,0,11.25,Cash,107,395,408,395,408)[0m
+[0m[[0minfo[0m] [0m(null,4799,16-01-16 1:45,16-01-16 2:00,840,1.1,,911,8,8,8.75,3,0,0,11.75,Credit Card,107,294,113,688,206)[0m
+[0m[[0minfo[0m] [0m(null,7210,03-01-16 4:30,03-01-16 4:45,480,0,,225,8,8,6.75,1,0,1,8.75,Credit Card,107,419,615,754,410)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338012000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,7415,06-01-16 10:30,06-01-16 10:45,960,0.1,,504,32,32,8.5,0,0,0,8.5,Cash,101,744,605,744,605)[0m
+[0m[[0minfo[0m] [0m(null,3964,07-01-16 16:00,07-01-16 16:00,720,0,,16,8,32,8.5,0,0,0,8.5,Cash,107,167,754,18,610)[0m
+[0m[[0minfo[0m] [0m(null,1278,06-01-16 18:30,06-01-16 18:30,480,1.2,,,,,6.75,0,0,0,6.75,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,7830,21-01-16 13:45,21-01-16 14:15,2040,16.4,,970,76,8,39.05,0,0,3.75,42.8,Cash,,225,6,210,470)[0m
+[0m[[0minfo[0m] [0m(null,5997,02-01-16 22:45,02-01-16 22:45,480,2.7,,,32,24,10,2,0,1,13,Credit Card,,385,478,199,510)[0m
+[0m[[0minfo[0m] [0m(null,2916,07-01-16 20:00,07-01-16 20:00,60,0.2,,108,24,24,3.75,0,0,0,3.75,Cash,,753,551,472,207)[0m
+[0m[[0minfo[0m] [0m(null,8541,29-01-16 11:45,29-01-16 11:45,180,0.5,,504,32,32,4.75,0,0,0,4.75,Cash,109,744,605,744,605)[0m
+[0m[[0minfo[0m] [0m(null,7212,15-01-16 12:00,15-01-16 12:00,360,1.1,,334,32,8,6.25,0,0,0,6.25,Cash,109,18,610,294,113)[0m
+[0m[[0minfo[0m] [0m(null,7541,16-01-16 1:00,16-01-16 1:00,240,0,,807,,28,6.5,2,0,0,8.5,Credit Card,107,,,411,545)[0m
+[0m[[0minfo[0m] [0m(null,177,27-01-16 22:30,27-01-16 22:45,780,5.7,,,8,31,16.5,3.3,0,0,19.8,Credit Card,,599,346,558,388)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338014000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m(null,1109,07-01-16 16:00,07-01-16 16:15,480,3.8,,553,76,,12,2,0,4,18,Credit Card,82,225,6,594,572)[0m
+[0m[[0minfo[0m] [0m(null,6115,11-01-16 10:30,11-01-16 10:30,480,2.8,,504,33,32,9.75,1.5,0,0,11.25,Credit Card,,728,277,744,605)[0m
+[0m[[0minfo[0m] [0m(null,1715,15-01-16 18:45,15-01-16 19:00,420,1.2,,,,,6.75,0,0,1,7.75,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,7875,31-01-16 21:45,31-01-16 21:45,420,2.6,,,,,7.85,0,0,0,7.85,Cash,,,,,)[0m
+[0m[[0minfo[0m] [0m(null,758,28-01-16 10:15,28-01-16 10:30,240,0.4,,16,32,32,4.75,2,0,0,6.75,Credit Card,107,18,610,18,610)[0m
+[0m[[0minfo[0m] [0m(null,4861,06-01-16 15:15,06-01-16 15:30,300,1.1,,13,8,8,6.5,1,0,0,7.5,Credit Card,107,210,470,474,204)[0m
+[0m[[0minfo[0m] [0m(null,2336,08-01-16 19:30,08-01-16 19:30,420,0,,504,,32,6.75,0,0,1,7.75,Cash,107,,,744,605)[0m
+[0m[[0minfo[0m] [0m(null,5557,10-01-16 18:45,10-01-16 18:45,600,3.1,,553,76,,11.5,3.1,0,4,18.6,Credit Card,109,225,6,594,572)[0m
+[0m[[0minfo[0m] [0m(null,919,24-01-16 4:00,24-01-16 4:15,660,4.5,,,7,3,14,4.5,0,1,19.5,Credit Card,8,173,203,660,120)[0m
+[0m[[0minfo[0m] [0m(null,7566,07-01-16 17:45,07-01-16 18:30,2760,23.4,,,39,76,57.5,17.25,0,0,74.75,Credit Card,107,470,676,575,547)[0m
+[0m[[0minfo[0m] [0m...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338016000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338018000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338020000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338022000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338024000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338026000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338028000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338030000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338032000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338034000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338036000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338038000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338040000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338042000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338044000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338046000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338048000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338050000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338052000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338054000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338056000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338058000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338060000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338062000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338064000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338066000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338068000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338070000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338072000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338074000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338076000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338078000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338080000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338082000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338084000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338086000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338088000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338090000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338092000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338094000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338096000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338098000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338100000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338102000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338104000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338106000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338108000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338110000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338112000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338114000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338116000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338118000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338120000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338122000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338124000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338126000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338128000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338130000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338132000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338134000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338136000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338138000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338140000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338142000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338144000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338146000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338148000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338150000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338152000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338154000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338156000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338158000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338160000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338162000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338164000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338166000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338168000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338170000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338172000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338174000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338176000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338178000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338180000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338182000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338184000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338186000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338188000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338190000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338192000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338194000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338196000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338198000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338200000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338202000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338204000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338206000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338208000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338210000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338212000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338214000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338216000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338218000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338220000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338222000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338224000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338226000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338228000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338230000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338232000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338234000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338236000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338238000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338240000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338242000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338244000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338246000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338248000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338250000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338252000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338254000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338256000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338258000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338260000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338262000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338264000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338266000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338268000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338270000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338272000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338274000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338276000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338278000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338280000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338282000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338284000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338286000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338288000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338290000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338292000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338294000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338296000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338298000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338300000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338302000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338304000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338306000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338308000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338310000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338312000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338314000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338316000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338318000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338320000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338322000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338324000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338326000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338328000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338330000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338332000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338334000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338336000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338338000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338340000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338342000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338344000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0mTime: 1563338346000 ms[0m
+[0m[[0minfo[0m] [0m-------------------------------------------[0m
+[0m[[0minfo[0m] [0m[0m
