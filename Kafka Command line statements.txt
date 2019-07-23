@@ -1,0 +1,18 @@
+//Start Zookeeper Server
+zkserver
+
+//Run Kafka Server -  GoTo C:\kafka_2.11-0.9.0.0\
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+//List Kafka Topics - GoTo C:\kafka_2.11-0.9.0.0\bin\windows.
+kafka-topics.bat --zookeeper localhost:2181 --list
+
+//Create Kafka Topics - GoTo C:\kafka_2.11-0.9.0.0\bin\windows.
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test26
+
+//Run a Kafka Topic Producer - GoTo C:\kafka_2.11-0.9.0.0\bin\windows.
+kafka-console-producer.bat --broker-list localhost:9092 --topic test26 < C:\nyc_uber_pickup_data.csv
+
+//Delete Kafka Topic - GoTo C:\kafka_2.11-0.9.0.0\bin\windows.
+kafka-topics.bat -zookeeper localhost:2181 --delete --topic test
+
